@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ROPSSSUE
 
 [Document2]
-DocumentPath=..\..\..\Downloads\JCULibrary.IntLib
+DocumentPath=JCULibrary.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
