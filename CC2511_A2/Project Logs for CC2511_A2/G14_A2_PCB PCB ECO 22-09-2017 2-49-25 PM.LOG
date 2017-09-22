@@ -1,0 +1,104 @@
+Added Component: Designator=C1(RAD-0.3)
+Added Component: Designator=C2(RAD-0.3)
+Added Component: Designator=C3(RAD-0.3)
+Added Component: Designator=D1(DO-41)
+Added Component: Designator=D7(DO-41)
+Added Component: Designator=F1(Fuse-1210)
+Added Component: Designator=FRDM?(FRDM-K20D50M-SINGLE)
+Added Component: Designator=H1(HDR1X8)
+Added Component: Designator=H2(HDR1X8)
+Added Component: Designator=H3(HDR1X8)
+Added Component: Designator=P1(HDR1X2)
+Added Component: Designator=Q1(TO-220)
+Added Component: Designator=Q2(TO-220)
+Added Component: Designator=Q3(TO-92)
+Added Component: Designator=Q4(TO-92)
+Added Component: Designator=Q5(TO-251AA)
+Added Component: Designator=Q6(TO-251AA)
+Added Component: Designator=Q7(SOT23)
+Added Component: Designator=R1(AXIAL-0.4)
+Added Component: Designator=R2(AXIAL-0.4)
+Added Component: Designator=R3(AXIAL-0.4)
+Added Component: Designator=R4(AXIAL-0.4)
+Added Component: Designator=(JCU-LOGO-1004)
+Added Component: Designator=U1(TO-220)
+Added Component: Designator=U2(DIP14)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=12V_VCC Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=5V_VCC Pin=C2-2
+Added Pin To Net: NetName=EM+ Pin=C3-1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD7_1 Pin=D7-1
+Added Pin To Net: NetName=NetC3_2 Pin=D7-2
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=GND Pin=FRDM?-J2_14
+Added Pin To Net: NetName=NetF1_1 Pin=FRDM?-J9_4
+Added Pin To Net: NetName=NetF1_1 Pin=FRDM?-J9_8
+Added Pin To Net: NetName=GND Pin=FRDM?-J9_12
+Added Pin To Net: NetName=GND Pin=FRDM?-J9_14
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=NetD1_2 Pin=P1-2
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=MOTOR+ Pin=Q1-2
+Added Pin To Net: NetName=12V_VCC Pin=Q1-3
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=MOTOR- Pin=Q2-2
+Added Pin To Net: NetName=12V_VCC Pin=Q2-3
+Added Pin To Net: NetName=GND Pin=Q3-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q3-3
+Added Pin To Net: NetName=GND Pin=Q4-1
+Added Pin To Net: NetName=NetQ2_1 Pin=Q4-3
+Added Pin To Net: NetName=MOTOR+ Pin=Q5-2
+Added Pin To Net: NetName=GND Pin=Q5-3
+Added Pin To Net: NetName=MOTOR- Pin=Q6-2
+Added Pin To Net: NetName=GND Pin=Q6-3
+Added Pin To Net: NetName=EM Pin=Q7-1
+Added Pin To Net: NetName=GND Pin=Q7-2
+Added Pin To Net: NetName=NetC3_2 Pin=Q7-3
+Added Pin To Net: NetName=NetQ1_1 Pin=R1-1
+Added Pin To Net: NetName=12V_VCC Pin=R1-2
+Added Pin To Net: NetName=NetQ2_1 Pin=R2-1
+Added Pin To Net: NetName=12V_VCC Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=EM Pin=R3-2
+Added Pin To Net: NetName=NetD7_1 Pin=R4-1
+Added Pin To Net: NetName=EM+ Pin=R4-2
+Added Pin To Net: NetName=12V_VCC Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=5V_VCC Pin=U1-3
+Added Pin To Net: NetName=H1 Pin=U2-1
+Added Pin To Net: NetName=DIR Pin=U2-2
+Added Pin To Net: NetName=DIR Pin=U2-3
+Added Pin To Net: NetName=H1 Pin=U2-5
+Added Pin To Net: NetName=H1 Pin=U2-6
+Added Pin To Net: NetName=H1 Pin=U2-8
+Added Pin To Net: NetName=PWM Pin=U2-9
+Added Pin To Net: NetName=PWM Pin=U2-12
+Added Member To Class: ClassName=Schematics Member=Component C1 Cap
+Added Member To Class: ClassName=Schematics Member=Component C2 Cap
+Added Member To Class: ClassName=Schematics Member=Component C3 Cap
+Added Member To Class: ClassName=Schematics Member=Component D1 1N4001
+Added Member To Class: ClassName=Schematics Member=Component D7 1N4001
+Added Member To Class: ClassName=Schematics Member=Component F1 1210L050YR
+Added Member To Class: ClassName=Schematics Member=Component FRDM? FRDM-K20D50M-SINGLE
+Added Member To Class: ClassName=Schematics Member=Component H1 Header 8
+Added Member To Class: ClassName=Schematics Member=Component H2 Header 8
+Added Member To Class: ClassName=Schematics Member=Component H3 Header 8
+Added Member To Class: ClassName=Schematics Member=Component P1 12V Supply
+Added Member To Class: ClassName=Schematics Member=Component Q1 FQP17P10
+Added Member To Class: ClassName=Schematics Member=Component Q2 FQP17P10
+Added Member To Class: ClassName=Schematics Member=Component Q3 2N7000
+Added Member To Class: ClassName=Schematics Member=Component Q4 2N7000
+Added Member To Class: ClassName=Schematics Member=Component Q5 IRLU2703PBF
+Added Member To Class: ClassName=Schematics Member=Component Q6 IRLU2703PBF
+Added Member To Class: ClassName=Schematics Member=Component Q7 IRFML8244TRPBF
+Added Member To Class: ClassName=Schematics Member=Component R1 Res2
+Added Member To Class: ClassName=Schematics Member=Component R2 Res2
+Added Member To Class: ClassName=Schematics Member=Component R3 Res2
+Added Member To Class: ClassName=Schematics Member=Component R4 100ohm
+Added Member To Class: ClassName=Schematics Member=Component  JCU-LOGO
+Added Member To Class: ClassName=Schematics Member=Component U1 
+Added Member To Class: ClassName=Schematics Member=Component U2 SN74HC02N
+Added Room: Name=Schematics
