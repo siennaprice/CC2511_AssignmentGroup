@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=EM- Pin=H1-4
+Change Component Footprint: Designator=Q7 Old Footprint=SOT23 New Footprint=TO-251AA
+Change Component Comment : Designator=Q7 Old Comment=IRFML8244TRPBF New Comment=IRLU2703PBF
+Added Component: Designator=(JCU-LOGO-1004)
+Add component. Clean all parameters for all variants
+Change Net Name : Old Net Name=EM- New Net Name=NetC3_2
+Added Pin To Net: NetName=EM- Pin=H1-4
+Added Net: Name=EM-
+Added Member To Class: ClassName=Schematics Member=Component  JCU-LOGO
+Added Room: Name=Schematics
