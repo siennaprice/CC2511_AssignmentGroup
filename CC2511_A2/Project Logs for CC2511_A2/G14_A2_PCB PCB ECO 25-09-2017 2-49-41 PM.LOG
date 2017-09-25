@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=LSwitch Pin=FRDM?-J19_6
+Removed Pin From Net: NetName=RSwitch Pin=FRDM?-J19_8
+Added Component: Designator=(JCU-LOGO-1004)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=RSwitch Pin=FRDM?-J19_6
+Added Pin To Net: NetName=LSwitch Pin=FRDM?-J19_8
+Added Member To Class: ClassName=Schematics Member=Component  JCU-LOGO
+Added Room: Name=Schematics
