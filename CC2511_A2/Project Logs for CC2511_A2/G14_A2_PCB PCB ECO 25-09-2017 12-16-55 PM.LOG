@@ -1,0 +1,17 @@
+Added Component: Designator=(JCU-LOGO-1004)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=12V_VCC Pin=D1-1
+Added Pin To Net: NetName=DIR Pin=FRDM?-J2_2
+Added Pin To Net: NetName=PWM Pin=FRDM?-J2_4
+Added Pin To Net: NetName=5V_VCC Pin=FRDM?-J9_16
+Added Pin To Net: NetName=EM Pin=FRDM?-J19_16
+Added Pin To Net: NetName=MOTOR+ Pin=H1-1
+Added Pin To Net: NetName=MOTOR- Pin=H1-2
+Added Pin To Net: NetName=EM+ Pin=H1-3
+Added Pin To Net: NetName=5V_VCC Pin=H1-5
+Added Pin To Net: NetName=GND Pin=H1-6
+Added Pin To Net: NetName=GND Pin=H3-2
+Added Pin To Net: NetName=DIR Pin=U2-11
+Added Pin To Net: NetName=5V_VCC Pin=U2-14
+Added Member To Class: ClassName=Schematics Member=Component  JCU-LOGO
+Added Room: Name=Schematics
