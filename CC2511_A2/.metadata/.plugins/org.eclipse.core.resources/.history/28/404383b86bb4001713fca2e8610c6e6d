@@ -46,7 +46,6 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 #include "stdbool.h"
-#include "OurMethods.h"
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -61,8 +60,6 @@ int main(void)
   //-----------------------------------------------------------------------------------------------------
   byte rh1, rv1, lh1, lv1, i = 0;
   byte rh2, rv2, lh2, lv2 = 0;
-  bool rs, ls = false;
-  OurMethods_DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
   AD1_GetChanValue8(0, &rh1);
@@ -78,20 +75,30 @@ int main(void)
 	  AD1_GetChanValue8(2, &lv2);
 	  AD1_GetChanValue8(3, &lh2);
 	  if (rh1 != rh2) {
-		  OurMethods_UpdateRH(rh);
+		  Term1_SendStr("RH - ");
+		  Term1_SendNum(rh2);
+		  Term1_SendStr("\r\n");
 	  }
-	  if (rv1 != rv2)
-		  OurMethods_UpdateRH(rv);
-
-	  if (lh1 != lh2)
-		  OurMethods_UpdateRH(lh);
-
-	  if (lv1 != lv2)
-		  OurMethods_UpdateRH(lv);
-
-	  if(rightSwitch_GetVal() != rs)
-		  OurMethods_UpdateRH(rs);
-
+	  if (rv1 != rv2) {
+		  Term1_SendStr("RV - ");
+		  Term1_SendNum(rv2);
+		  Term1_SendStr("\r\n");
+	  }
+	  if (lh1 != lh2) {
+		  Term1_SendStr("LH - ");
+		  Term1_SendNum(lh2);
+		  Term1_SendStr("\r\n");
+	  }
+	  if (lv1 != lv2) {
+		  Term1_SendStr("LV - ");
+		  Term1_SendNum(lv2);
+		  Term1_SendStr("\r\n");
+	  }
+	  if(rightSwitch_GetVal() == 1){
+		  Term1_SendStr("right switch - ");
+		  Term1_SendStr("Pressed");
+		  Term1_SendStr("\r\n");
+	  }
 	  if(leftSwitch_GetVal() == 1){
 		  Term1_SendStr("left switch - ");
 		  Term1_SendStr("Pressed");
