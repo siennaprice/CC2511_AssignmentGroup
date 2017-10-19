@@ -62,7 +62,7 @@ int main(void)
   byte rh1, rv1, lh1, lv1, i = 0;
   byte rh2, rv2, lh2, lv2 = 0;
   bool rs, ls = false;
-  OurMethods_DisplaySetUp();
+  DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
   AD1_GetChanValue8(0, &rh1);
@@ -77,32 +77,36 @@ int main(void)
 	  AD1_GetChanValue8(1, &rv2);
 	  AD1_GetChanValue8(2, &lv2);
 	  AD1_GetChanValue8(3, &lh2);
-	  if (rh1 != rh2) {
-		  OurMethods_UpdateRH(rh);
-	  }
+	  if (rh1 != rh2)
+		  UpdateRH(&rh2);
+
 	  if (rv1 != rv2)
-		  OurMethods_UpdateRH(rv);
+		  UpdateRH(&rv2);
 
 	  if (lh1 != lh2)
-		  OurMethods_UpdateRH(lh);
+		  UpdateRH(&lh2);
 
 	  if (lv1 != lv2)
-		  OurMethods_UpdateRH(lv);
+		  UpdateRH(&lv2);
 
-	  if(rightSwitch_GetVal() != rs)
-		  OurMethods_UpdateRH(rs);
-
-	  if(leftSwitch_GetVal() == 1){
-		  Term1_SendStr("left switch - ");
+	  Term1_MoveTo(11, 7);
+	  if(rightSwitch_GetVal() == 1) {
 		  Term1_SendStr("Pressed");
-		  Term1_SendStr("\r\n");
+	  } else {
+		  Term1_SendStr("Off    ");
 	  }
-	  Term1_SendStr("----------------\r\n");
 
-	  rh1 = &rh2;
-	  rv1 = &rv2;
-	  lh1 = &lh2;
-	  lv1 = &lv2;
+	  Term1_MoveTo(11, 3);
+	  if(leftSwitch_GetVal() == 1){
+		  Term1_SendStr("Pressed");
+	  } else {
+		  Term1_SendStr("Off    ");
+	  }
+
+	  rh1 = rh2;
+	  rv1 = rv2;
+	  lh1 = lh2;
+	  lv1 = lv2;
   }
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/

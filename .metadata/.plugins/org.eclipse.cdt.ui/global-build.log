@@ -1,0 +1,570 @@
+23:21:03 **** Clean-only build of configuration Debug for project A2_Manual ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/Inhr1.d ./Generated_Code/PE_LDD.d ./Generated_Code/Term1.d ./Generated_Code/Vectors.d ./Generated_Code/leftSwitch.d ./Generated_Code/rightSwitch.d  crane.elf
+ 
+23:22:53 **** Clean-only build of configuration Debug for project A2_Manual ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/AD1.d ./Generated_Code/ASerialLdd1.d ./Generated_Code/AdcLdd1.d ./Generated_Code/BitIoLdd1.d ./Generated_Code/BitIoLdd2.d ./Generated_Code/Cpu.d ./Generated_Code/Inhr1.d ./Generated_Code/PE_LDD.d ./Generated_Code/Term1.d ./Generated_Code/Vectors.d ./Generated_Code/leftSwitch.d ./Generated_Code/rightSwitch.d  crane.elf
+ 
+23:22:54 **** Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/Events.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+Finished building: ../Sources/Events.c
+ 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+In file included from ../Sources/OurMethods.c:7:0:
+../Sources/OurMethods.h:13:16: error: unknown type name 'byte'
+ void UpdateRH (byte *val);
+                ^
+../Sources/OurMethods.h:15:16: error: unknown type name 'byte'
+ void UpdateRV (byte *val);
+                ^
+../Sources/OurMethods.h:17:16: error: unknown type name 'byte'
+ void UpdateLH (byte *val);
+                ^
+../Sources/OurMethods.h:19:16: error: unknown type name 'byte'
+ void UpdateLV (byte *val);
+                ^
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+Sources/subdir.mk:24: recipe for target 'Sources/OurMethods.o' failed
+make: *** [Sources/OurMethods.o] Error 1
+23:23:16 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+In file included from ../Sources/OurMethods.c:7:0:
+../Sources/OurMethods.h:13:16: error: unknown type name 'byte'
+ void UpdateRH (byte *val);
+                ^
+../Sources/OurMethods.h:15:16: error: unknown type name 'byte'
+ void UpdateRV (byte *val);
+                ^
+../Sources/OurMethods.h:17:16: error: unknown type name 'byte'
+ void UpdateLH (byte *val);
+                ^
+../Sources/OurMethods.h:19:16: error: unknown type name 'byte'
+ void UpdateLV (byte *val);
+                ^
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+make: *** [Sources/OurMethods.o] Error 1
+Sources/subdir.mk:24: recipe for target 'Sources/OurMethods.o' failed
+23:24:32 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:65:3: warning: implicit declaration of function 'OurMethods_DisplaySetUp' [-Wimplicit-function-declaration]
+   OurMethods_DisplaySetUp();
+   ^
+../Sources/main.c:81:5: warning: implicit declaration of function 'OurMethods_UpdateRH' [-Wimplicit-function-declaration]
+     OurMethods_UpdateRH(rh2);
+     ^
+../Sources/main.c:106:8: warning: assignment makes integer from pointer without a cast [enabled by default]
+    rh1 = &rh2;
+        ^
+../Sources/main.c:107:8: warning: assignment makes integer from pointer without a cast [enabled by default]
+    rv1 = &rv2;
+        ^
+../Sources/main.c:108:8: warning: assignment makes integer from pointer without a cast [enabled by default]
+    lh1 = &lh2;
+        ^
+../Sources/main.c:109:8: warning: assignment makes integer from pointer without a cast [enabled by default]
+    lv1 = &lv2;
+        ^
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Generated_Code/AD1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AD1.d" -MT"Generated_Code/AD1.o" -c -o "Generated_Code/AD1.o" "../Generated_Code/AD1.c"
+Finished building: ../Generated_Code/AD1.c
+ 
+Building file: ../Generated_Code/ASerialLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+Finished building: ../Generated_Code/ASerialLdd1.c
+ 
+Building file: ../Generated_Code/AdcLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd1.d" -MT"Generated_Code/AdcLdd1.o" -c -o "Generated_Code/AdcLdd1.o" "../Generated_Code/AdcLdd1.c"
+Finished building: ../Generated_Code/AdcLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+Finished building: ../Generated_Code/BitIoLdd1.c
+ 
+Building file: ../Generated_Code/BitIoLdd2.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+Finished building: ../Generated_Code/BitIoLdd2.c
+ 
+Building file: ../Generated_Code/Cpu.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+Finished building: ../Generated_Code/Cpu.c
+ 
+Building file: ../Generated_Code/Inhr1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Inhr1.d" -MT"Generated_Code/Inhr1.o" -c -o "Generated_Code/Inhr1.o" "../Generated_Code/Inhr1.c"
+Finished building: ../Generated_Code/Inhr1.c
+ 
+Building file: ../Generated_Code/PE_LDD.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+Finished building: ../Generated_Code/PE_LDD.c
+ 
+Building file: ../Generated_Code/Term1.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Term1.d" -MT"Generated_Code/Term1.o" -c -o "Generated_Code/Term1.o" "../Generated_Code/Term1.c"
+Finished building: ../Generated_Code/Term1.c
+ 
+Building file: ../Generated_Code/Vectors.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+Finished building: ../Generated_Code/Vectors.c
+ 
+Building file: ../Generated_Code/leftSwitch.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/leftSwitch.d" -MT"Generated_Code/leftSwitch.o" -c -o "Generated_Code/leftSwitch.o" "../Generated_Code/leftSwitch.c"
+Finished building: ../Generated_Code/leftSwitch.c
+ 
+Building file: ../Generated_Code/rightSwitch.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/rightSwitch.d" -MT"Generated_Code/rightSwitch.o" -c -o "Generated_Code/rightSwitch.o" "../Generated_Code/rightSwitch.c"
+Finished building: ../Generated_Code/rightSwitch.c
+ 
+Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+./Sources/main.o: In function `main':
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:65: undefined reference to `OurMethods_DisplaySetUp'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:81: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:84: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:87: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:90: undefined reference to `OurMethods_UpdateRH'
+collect2.exe: error: ld returned 1 exit status
+make: *** [crane.elf] Error 1
+makefile:54: recipe for target 'crane.elf' failed
+23:26:40 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:65:3: warning: implicit declaration of function 'OurMethods_DisplaySetUp' [-Wimplicit-function-declaration]
+   OurMethods_DisplaySetUp();
+   ^
+../Sources/main.c:81:5: warning: implicit declaration of function 'OurMethods_UpdateRH' [-Wimplicit-function-declaration]
+     OurMethods_UpdateRH(rh2);
+     ^
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+./Sources/main.o: In function `main':
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:65: undefined reference to `OurMethods_DisplaySetUp'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:81: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:84: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:87: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:90: undefined reference to `OurMethods_UpdateRH'
+collect2.exe: error: ld returned 1 exit status
+makefile:54: recipe for target 'crane.elf' failed
+make: *** [crane.elf] Error 1
+23:30:22 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:65:3: error: 'OurMethods' undeclared (first use in this function)
+   OurMethods.DisplaySetUp();
+   ^
+../Sources/main.c:65:3: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:81:5: warning: implicit declaration of function 'OurMethods_UpdateRH' [-Wimplicit-function-declaration]
+     OurMethods_UpdateRH(rh2);
+     ^
+Sources/subdir.mk:24: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+23:32:44 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:81:5: warning: implicit declaration of function 'OurMethods_UpdateRH' [-Wimplicit-function-declaration]
+     OurMethods_UpdateRH(rh2);
+     ^
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+./Sources/main.o: In function `main':
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:81: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:84: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:87: undefined reference to `OurMethods_UpdateRH'
+C:\Users\Bookie\Desktop\CC2511_AssignmentGroup\A2_Manual\Debug/../Sources/main.c:90: undefined reference to `OurMethods_UpdateRH'
+collect2.exe: error: ld returned 1 exit status
+makefile:54: recipe for target 'crane.elf' failed
+make: *** [crane.elf] Error 1
+23:33:37 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:81:5: warning: passing argument 1 of 'UpdateRH' makes pointer from integer without a cast [enabled by default]
+     UpdateRH(rh2);
+     ^
+In file included from ../Sources/main.c:49:0:
+../Sources/OurMethods.h:14:6: note: expected 'byte *' but argument is of type 'byte'
+ void UpdateRH (byte *val);
+      ^
+../Sources/main.c:84:5: warning: passing argument 1 of 'UpdateRH' makes pointer from integer without a cast [enabled by default]
+     UpdateRH(rv2);
+     ^
+In file included from ../Sources/main.c:49:0:
+../Sources/OurMethods.h:14:6: note: expected 'byte *' but argument is of type 'byte'
+ void UpdateRH (byte *val);
+      ^
+../Sources/main.c:87:5: warning: passing argument 1 of 'UpdateRH' makes pointer from integer without a cast [enabled by default]
+     UpdateRH(lh2);
+     ^
+In file included from ../Sources/main.c:49:0:
+../Sources/OurMethods.h:14:6: note: expected 'byte *' but argument is of type 'byte'
+ void UpdateRH (byte *val);
+      ^
+../Sources/main.c:90:5: warning: passing argument 1 of 'UpdateRH' makes pointer from integer without a cast [enabled by default]
+     UpdateRH(lv2);
+     ^
+In file included from ../Sources/main.c:49:0:
+../Sources/OurMethods.h:14:6: note: expected 'byte *' but argument is of type 'byte'
+ void UpdateRH (byte *val);
+      ^
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 
+23:34:24 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 
+23:35:17 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:41:20 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:42:56 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:44:18 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:46:31 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(&val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte **'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 
+23:47:27 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 
+23:47:42 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:48:16 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for 'all'.
+23:51:57 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 

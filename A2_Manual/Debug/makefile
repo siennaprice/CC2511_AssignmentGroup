@@ -11,6 +11,7 @@ RM := rm -rf
 -include Sources/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
 -include Generated_Code/subdir.mk
+-include .metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -52,7 +53,7 @@ all: crane.elf secondary-outputs
 crane.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "G:/crane/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"G:/crane/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

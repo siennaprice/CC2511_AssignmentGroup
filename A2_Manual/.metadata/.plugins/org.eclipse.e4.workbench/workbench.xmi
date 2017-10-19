@@ -6,6 +6,8 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_sItU4rRkEeekxNfzp48JHQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_sVPVA7RkEeekxNfzp48JHQ" label="%trimmedwindow.label.eclipseSDK" x="26" y="26" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1508409150607"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_sVPVA7RkEeekxNfzp48JHQ" selectedElement="_sVPVBLRkEeekxNfzp48JHQ" horizontal="true">
@@ -272,7 +274,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sWbn0rRkEeekxNfzp48JHQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sWbn5LRkEeekxNfzp48JHQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_sJKC77RkEeekxNfzp48JHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zr-G17S4EeeDWY2YIjk97Q" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_sJKC77RkEeekxNfzp48JHQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sWbn07RkEeekxNfzp48JHQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -296,7 +298,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sWbn17RkEeekxNfzp48JHQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_sWbn7rRkEeekxNfzp48JHQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_sJKBDbRkEeekxNfzp48JHQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zr-G4bS4EeeDWY2YIjk97Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_sJKBDbRkEeekxNfzp48JHQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sWbn2LRkEeekxNfzp48JHQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2123,6 +2125,8 @@
   <commands xmi:id="_sU8aZbRkEeekxNfzp48JHQ" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_sJAP5LRkEeekxNfzp48JHQ"/>
   <commands xmi:id="_sU8aZrRkEeekxNfzp48JHQ" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_sJAP5LRkEeekxNfzp48JHQ"/>
   <commands xmi:id="_sU8aZ7RkEeekxNfzp48JHQ" elementId="AUTOGEN:::org.eclipse.rse.ui.view.systemView.toolbar/org.eclipse.rse.ui.view.systemView.toolbar.linkWithSystemView" commandName="Link with Editor" category="_sJAP5LRkEeekxNfzp48JHQ"/>
+  <commands xmi:id="_zhsJcbS4EeeDWY2YIjk97Q" elementId="com.freescale.new4sdk.menucommand" commandName="Kinetis SDK 2.x Project" category="_sJAP5LRkEeekxNfzp48JHQ"/>
+  <commands xmi:id="_zkXqALS4EeeDWY2YIjk97Q" elementId="com.processorexpert.ui.kds.newprojectwizard.menucommand_duplicated" commandName="com.processorexpert.ui.kds.newprojectwizard.menucommand_duplicated"/>
   <addons xmi:id="_sItU7LRkEeekxNfzp48JHQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_sItU7bRkEeekxNfzp48JHQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_sItU7rRkEeekxNfzp48JHQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

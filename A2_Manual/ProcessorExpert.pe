@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PEproject>
   <Header>
-    <Name>crane</Name>
+    <Name>A2_Manual</Name>
     <SavedBy>jc240979</SavedBy>
     <ModificationStamp>5</ModificationStamp>
     <Date>2017-10-16</Date>
     <IDE>Eclipse IDE</IDE>
-    <PEversion>1.12.0.RT7_b1515-0427</PEversion>
+    <PEversion>1.12.2.RT7_b1550-0615</PEversion>
   </Header>
   <Options>
     <ProjectMainModule>main</ProjectMainModule>
@@ -18936,8 +18936,8 @@
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
               <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-              <Index>1</Index>
-              <Value>false</Value>
+              <Index>0</Index>
+              <Value>true</Value>
             </ItemState>
             <ItemState>
               <ItemSymbol>InitValue</ItemSymbol>

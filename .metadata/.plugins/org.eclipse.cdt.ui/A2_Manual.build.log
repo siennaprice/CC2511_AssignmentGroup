@@ -1,0 +1,52 @@
+23:51:57 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+Building file: ../Sources/OurMethods.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+../Sources/OurMethods.c: In function 'UpdateRH':
+../Sources/OurMethods.c:25:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateRV':
+../Sources/OurMethods.c:31:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLH':
+../Sources/OurMethods.c:37:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+../Sources/OurMethods.c: In function 'UpdateLV':
+../Sources/OurMethods.c:43:2: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+  Term1_SendNum(val);
+  ^
+In file included from ../Sources/OurMethods.c:9:0:
+C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Term1.h:148:6: note: expected 'int32_t' but argument is of type 'byte *'
+ void Term1_SendNum(int32_t number);
+      ^
+Finished building: ../Sources/OurMethods.c
+ 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: crane.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Bookie/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/leftSwitch.o ./Generated_Code/rightSwitch.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: crane.elf
+ 
+
+23:51:58 Build Finished (took 842ms)
+
