@@ -57,6 +57,7 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\AdcLdd1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd2.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd3.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Inhr1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_LDD.c</PathName>
@@ -69,6 +70,7 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\leftSwitch.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\magnet.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\rightSwitch.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\stringThingy.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Sources\Events.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Sources\OurMethods.c</PathName>
@@ -80,6 +82,7 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\AdcLdd1.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd2.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd3.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Inhr1.h</PathName>
@@ -95,6 +98,7 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\leftSwitch.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\magnet.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\rightSwitch.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\stringThingy.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Sources\Events.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Sources\OurMethods.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Static_Code\IO_Map\MK20D5.h</PathName>

@@ -45,8 +45,10 @@
 #include "boomVert.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "magnet.h"
+#include "stringThingy.h"
 #include "PwmLdd2.h"
+#include "magnet.h"
+#include "BitIoLdd3.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-20, 14:23, # CodeGen: 10
+**     Date/Time   : 2017-10-20, 15:11, # CodeGen: 12
 **     Abstract    :
 **
 **     Settings    :
@@ -308,8 +308,10 @@
 #include "boomVert.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "magnet.h"
+#include "stringThingy.h"
 #include "PwmLdd2.h"
+#include "magnet.h"
+#include "BitIoLdd3.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -532,6 +534,8 @@ void PE_low_level_init(void)
   (void)PwmLdd1_Init(NULL);
   /* ### PWM_LDD "PwmLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)PwmLdd2_Init(NULL);
+  /* ### BitIO_LDD "BitIoLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)BitIoLdd3_Init(NULL);
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

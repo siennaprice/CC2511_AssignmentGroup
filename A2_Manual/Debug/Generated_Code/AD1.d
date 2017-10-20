@@ -32,9 +32,12 @@ Generated_Code/AD1.o: ../Generated_Code/AD1.c \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/FTM_PDD.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd1.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU1.h \
- C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/stringVert.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/stringThingy.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/magnet.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h \
  ../Generated_Code/AD1.h
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources/Events.h:
@@ -103,10 +106,16 @@ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU1.h:
 
-C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/stringVert.h:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/stringThingy.h:
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h:
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/magnet.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h:
 
 ../Generated_Code/AD1.h:

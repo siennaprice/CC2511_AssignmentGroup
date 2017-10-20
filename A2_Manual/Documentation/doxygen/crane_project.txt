@@ -34,6 +34,7 @@
 - \subpage TU1
 - \subpage PwmLdd1
 - \subpage PwmLdd2
+- \subpage BitIoLdd3
 
 */
 

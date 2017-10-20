@@ -42,8 +42,10 @@
 #include "boomVert.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "magnet.h"
+#include "stringThingy.h"
 #include "PwmLdd2.h"
+#include "magnet.h"
+#include "BitIoLdd3.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -65,15 +67,14 @@ int main(void)
   /* Write your code here */
   //-----------------------------------------------------------------------------------------------------
   int16 joysticks1[4], joysticks2[4];
-
   DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
   AD1_GetValue16(joysticks1);
   //set boom vertical to not moving
   boomVert_SetDutyUS(1000);
-  //set magnet vertical to not moving
-  magnet_SetDutyUS(1500);
+  //set stringThingy vertical to not moving
+  //stringThingy_SetDutyUS(1500);
 
   for(;;) {
 	  AD1_Measure(true);
@@ -90,17 +91,17 @@ int main(void)
 	  joysticks1[i] = joysticks2[i];
 	  }
 
-	  //if right vertical is detected
-//	  if(joysticks1[1] > 45000){
-//		  magnet_SetDutyUS(1000);
-//	  }
-//	  else if(joysticks1[1] < 1000){
-//		  magnet_SetDutyUS(2000);
-//	  }
+//	  //if right vertical is detected move stringThingy
+	  if(joysticks1[1] > 45000){
+		  boomVert_SetDutyUS(1600);
+	  }
+	  else if(joysticks1[1] < 1000){
+		  boomVert_SetDutyUS(1400);
+	  }
+	  //else set it to still
 //	  else{
-//		  magnet_SetDutyUS(1500);
+//		  boomVert_SetDutyUS(1000);
 //	  }
-
 
   }
 

@@ -757,7 +757,7 @@ Autoselect
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="20 ms" />
       <Starting_pulse_width v="0 ms" />
-      <Initial_polarity v="low" />
+      <Initial_polarity v="high" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -781,7 +781,7 @@ Autoselect
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="20 ms" />
             <Starting_pulse_width v="0 ms" />
-            <Initial_polarity v="low" />
+            <Initial_polarity v="high" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">
@@ -864,9 +864,9 @@ Autoselect
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM1_C1V" />
             <Offset v="0 ms" />
-            <enumgroup name="Output on compare" v="Set">
-              <Output_on_overrun v="Clear" />
-              <Initial_state v="Low" />
+            <enumgroup name="Output on compare" v="Clear">
+              <Output_on_overrun v="Set" />
+              <Initial_state v="High" />
               <Output_pin v="ADC0_SE9/TSI0_CH6/PTB1/I2C0_SDA/FTM1_CH1/FTM1_QD_PHB" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -876,9 +876,9 @@ Autoselect
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM1_C0V" />
             <Offset v="0 ms" />
-            <enumgroup name="Output on compare" v="Set">
-              <Output_on_overrun v="Clear" />
-              <Initial_state v="Low" />
+            <enumgroup name="Output on compare" v="Clear">
+              <Output_on_overrun v="Set" />
+              <Initial_state v="High" />
               <Output_pin v="ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -937,10 +937,10 @@ Autoselect
       <event name="OnChannel7" v="don&amp;apos;t generate code" />
     </Events>
   </Bean>
-  <Bean name="magnet" type="PWM">
+  <Bean name="stringThingy" type="PWM">
     <Enabled v="Y" />
     <Properties>
-      <Component_name v="magnet" />
+      <Component_name v="stringThingy" />
       <PWM_or_PPG_device v="FTM1_C0V" />
       <Duty_compare v="" />
       <Output_pin v="ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA" />
@@ -948,7 +948,7 @@ Autoselect
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="20 ms" />
       <Starting_pulse_width v="0 ms" />
-      <Initial_polarity v="low" />
+      <Initial_polarity v="high" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -972,7 +972,7 @@ Autoselect
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="20 ms" />
             <Starting_pulse_width v="0 ms" />
-            <Initial_polarity v="low" />
+            <Initial_polarity v="high" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">
@@ -1031,6 +1031,69 @@ Autoselect
       <event name="BeforeNewSpeed" v="don&amp;apos;t generate code" />
       <event name="AfterNewSpeed" v="don&amp;apos;t generate code" />
       <event name="OnEnd" v="don&amp;apos;t generate code" />
+    </Events>
+  </Bean>
+  <Bean name="magnet" type="BitIO">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="magnet" />
+      <Pin_for_I_O v="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT" />
+      <inhrbean type="BitIO_LDD">
+        <Enabled v="Y" />
+        <Template v="BitIO_LDD" />
+        <Properties>
+          <Component_name v="BitIoLdd3" />
+          <Pin_for_I_O v="PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT" />
+          <Direction v="Output" />
+          <group name="Initialization">
+            <Init__direction v="Output" />
+            <Init__value v="0" />
+            <Auto_initialization v="yes" />
+          </group>
+          <Safe_mode v="yes" />
+        </Properties>
+        <Methods>
+          <Init v="generate code" />
+          <Deinit v="don&amp;apos;t generate code" />
+          <GetDir v="don&amp;apos;t generate code" />
+          <SetDir v="don&amp;apos;t generate code" />
+          <SetInput v="don&amp;apos;t generate code" />
+          <SetOutput v="don&amp;apos;t generate code" />
+          <GetVal v="generate code" />
+          <PutVal v="generate code" />
+          <ClrVal v="generate code" />
+          <SetVal v="generate code" />
+          <NegVal v="generate code" />
+          <ConnectPin v="don&amp;apos;t generate code" />
+          <GetRawVal v="don&amp;apos;t generate code" />
+        </Methods>
+        <Events>
+          <EmptySection_DummyValue />
+        </Events>
+      </inhrbean>
+      <Direction v="Output" />
+      <group name="Initialization">
+        <Init__direction v="Output" />
+        <Init__value v="0" />
+      </group>
+      <Safe_mode v="yes" />
+      <Optimization_for v="speed" />
+    </Properties>
+    <Methods>
+      <GetDir v="don&amp;apos;t generate code" />
+      <SetDir v="don&amp;apos;t generate code" />
+      <SetInput v="don&amp;apos;t generate code" />
+      <SetOutput v="don&amp;apos;t generate code" />
+      <GetVal v="generate code" />
+      <PutVal v="generate code" />
+      <ClrVal v="generate code" />
+      <SetVal v="generate code" />
+      <NegVal v="generate code" />
+      <ConnectPin v="don&amp;apos;t generate code" />
+      <GetRawVal v="don&amp;apos;t generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

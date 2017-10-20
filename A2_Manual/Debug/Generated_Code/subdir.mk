@@ -9,6 +9,7 @@ C_SRCS += \
 ../Generated_Code/AdcLdd1.c \
 ../Generated_Code/BitIoLdd1.c \
 ../Generated_Code/BitIoLdd2.c \
+../Generated_Code/BitIoLdd3.c \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/Inhr1.c \
 ../Generated_Code/PE_LDD.c \
@@ -19,8 +20,9 @@ C_SRCS += \
 ../Generated_Code/Vectors.c \
 ../Generated_Code/boomVert.c \
 ../Generated_Code/leftSwitch.c \
+../Generated_Code/magnet.c \
 ../Generated_Code/rightSwitch.c \
-../Generated_Code/stringVert.c 
+../Generated_Code/stringThingy.c 
 
 OBJS += \
 ./Generated_Code/AD1.o \
@@ -28,6 +30,7 @@ OBJS += \
 ./Generated_Code/AdcLdd1.o \
 ./Generated_Code/BitIoLdd1.o \
 ./Generated_Code/BitIoLdd2.o \
+./Generated_Code/BitIoLdd3.o \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/Inhr1.o \
 ./Generated_Code/PE_LDD.o \
@@ -38,8 +41,9 @@ OBJS += \
 ./Generated_Code/Vectors.o \
 ./Generated_Code/boomVert.o \
 ./Generated_Code/leftSwitch.o \
+./Generated_Code/magnet.o \
 ./Generated_Code/rightSwitch.o \
-./Generated_Code/stringVert.o 
+./Generated_Code/stringThingy.o 
 
 C_DEPS += \
 ./Generated_Code/AD1.d \
@@ -47,6 +51,7 @@ C_DEPS += \
 ./Generated_Code/AdcLdd1.d \
 ./Generated_Code/BitIoLdd1.d \
 ./Generated_Code/BitIoLdd2.d \
+./Generated_Code/BitIoLdd3.d \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/Inhr1.d \
 ./Generated_Code/PE_LDD.d \
@@ -57,8 +62,9 @@ C_DEPS += \
 ./Generated_Code/Vectors.d \
 ./Generated_Code/boomVert.d \
 ./Generated_Code/leftSwitch.d \
+./Generated_Code/magnet.d \
 ./Generated_Code/rightSwitch.d \
-./Generated_Code/stringVert.d 
+./Generated_Code/stringThingy.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

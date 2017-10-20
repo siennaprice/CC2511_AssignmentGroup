@@ -7,7 +7,7 @@
 **     Version     : Component 01.164, Driver 01.11, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-20, 12:02, # CodeGen: 7
+**     Date/Time   : 2017-10-20, 15:34, # CodeGen: 14
 **     Abstract    :
 **          This TimerUnit component provides a low level API for unified hardware access across
 **          various timer devices using the Prescaler-Counter-Compare-Capture timer structure.
@@ -29,9 +29,9 @@
 **              Mode                                       : Compare
 **                Compare                                  : FTM1_C1V
 **                Offset                                   : 0 ms
-**                Output on compare                        : Set
-**                  Output on overrun                      : Clear
-**                  Initial state                          : Low
+**                Output on compare                        : Clear
+**                  Output on overrun                      : Set
+**                  Initial state                          : High
 **                  Output pin                             : ADC0_SE9/TSI0_CH6/PTB1/I2C0_SDA/FTM1_CH1/FTM1_QD_PHB
 **                  Output pin signal                      : 
 **                Interrupt                                : Disabled
@@ -39,9 +39,9 @@
 **              Mode                                       : Compare
 **                Compare                                  : FTM1_C0V
 **                Offset                                   : 0 ms
-**                Output on compare                        : Set
-**                  Output on overrun                      : Clear
-**                  Initial state                          : Low
+**                Output on compare                        : Clear
+**                  Output on overrun                      : Set
+**                  Initial state                          : High
 **                  Output pin                             : ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA
 **                  Output pin signal                      : 
 **                Interrupt                                : Disabled

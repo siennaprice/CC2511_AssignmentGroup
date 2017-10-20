@@ -1,14 +1,14 @@
-Generated_Code/stringVert.o: ../Generated_Code/stringVert.c \
- ../Generated_Code/stringVert.h ../Generated_Code/PE_Types.h \
+Generated_Code/magnet.o: ../Generated_Code/magnet.c \
+ ../Generated_Code/magnet.h ../Generated_Code/PE_Types.h \
  ../Generated_Code/PE_Error.h ../Generated_Code/PE_Const.h \
  ../Generated_Code/IO_Map.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map/MK20D5.h \
- ../Generated_Code/PwmLdd2.h ../Generated_Code/TU1.h \
- C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/FTM_PDD.h \
+ ../Generated_Code/BitIoLdd3.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/GPIO_PDD.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/PDD_Types.h \
  ../Generated_Code/Cpu.h
 
-../Generated_Code/stringVert.h:
+../Generated_Code/magnet.h:
 
 ../Generated_Code/PE_Types.h:
 
@@ -20,11 +20,9 @@ Generated_Code/stringVert.o: ../Generated_Code/stringVert.c \
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map/MK20D5.h:
 
-../Generated_Code/PwmLdd2.h:
+../Generated_Code/BitIoLdd3.h:
 
-../Generated_Code/TU1.h:
-
-C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/FTM_PDD.h:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/GPIO_PDD.h:
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/PDD_Types.h:
 

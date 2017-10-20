@@ -3,40 +3,34 @@
 **     Filename    : magnet.h
 **     Project     : crane
 **     Processor   : MK20DX128VLH5
-**     Component   : PWM
-**     Version     : Component 02.241, Driver 01.01, CPU db: 3.00.000
+**     Component   : BitIO
+**     Version     : Component 02.086, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-20, 14:23, # CodeGen: 10
+**     Date/Time   : 2017-10-20, 15:11, # CodeGen: 12
 **     Abstract    :
-**         This component implements a pulse-width modulation generator
-**         that generates signal with variable duty and fixed cycle. 
+**         This component "BitIO" implements an one-bit input/output.
+**         It uses one bit/pin of a port.
+**         Note: This component is set to work in Output direction only.
+**         Methods of this component are mostly implemented as a macros
+**         (if supported by target language and compiler).
 **     Settings    :
 **          Component name                                 : magnet
-**          PWM or PPG device                              : FTM1_C0V
-**          Duty compare                                   : 
-**          Output pin                                     : ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA
-**          Output pin signal                              : 
-**          Counter                                        : FTM1_CNT
-**          Interrupt service/event                        : Disabled
-**          Period                                         : 20 ms
-**          Starting pulse width                           : 0 ms
-**          Initial polarity                               : low
-**          Same period in modes                           : no
-**          Component uses entire timer                    : no
+**          Pin for I/O                                    : PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/CMP1_OUT
+**          Pin signal                                     : 
+**          BitIO_LDD                                      : BitIO_LDD
+**          Direction                                      : Output
 **          Initialization                                 : 
-**            Enabled in init. code                        : yes
-**            Events enabled in init.                      : yes
-**          CPU clock/speed selection                      : 
-**            High speed mode                              : This component enabled
-**            Low speed mode                               : This component disabled
-**            Slow speed mode                              : This component disabled
-**          Referenced components                          : 
-**            PWM_LDD                                      : PWM_LDD
+**            Init. direction                              : Output
+**            Init. value                                  : 0
+**          Safe mode                                      : yes
+**          Optimization for                               : speed
 **     Contents    :
-**         SetRatio16 - byte magnet_SetRatio16(word Ratio);
-**         SetDutyUS  - byte magnet_SetDutyUS(word Time);
-**         SetDutyMS  - byte magnet_SetDutyMS(word Time);
+**         GetVal - bool magnet_GetVal(void);
+**         PutVal - void magnet_PutVal(bool Val);
+**         ClrVal - void magnet_ClrVal(void);
+**         SetVal - void magnet_SetVal(void);
+**         NegVal - void magnet_NegVal(void);
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -71,10 +65,13 @@
 ** ###################################################################*/
 /*!
 ** @file magnet.h
-** @version 01.01
+** @version 01.00
 ** @brief
-**         This component implements a pulse-width modulation generator
-**         that generates signal with variable duty and fixed cycle. 
+**         This component "BitIO" implements an one-bit input/output.
+**         It uses one bit/pin of a port.
+**         Note: This component is set to work in Output direction only.
+**         Methods of this component are mostly implemented as a macros
+**         (if supported by target language and compiler).
 */         
 /*!
 **  @addtogroup magnet_module magnet module documentation
@@ -92,7 +89,7 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 /* Include inherited beans */
-#include "PwmLdd2.h"
+#include "BitIoLdd3.h"
 
 #include "Cpu.h"
 
@@ -101,77 +98,74 @@ extern "C" {
 #endif 
 
 
-#define magnet_PERIOD_VALUE PwmLdd2_PERIOD_VALUE /* Initial period value in ticks of the timer. It is available only if the bean is enabled in high speed mode. */
-#define magnet_PERIOD_VALUE_HIGH PwmLdd2_PERIOD_VALUE_0 /* Period value in ticks of the timer in high speed mode. It is available only if the bean is enabled in high speed mode. */
 
 
 /*
 ** ===================================================================
-**     Method      :  magnet_SetRatio16 (component PWM)
+**     Method      :  magnet_GetVal (component BitIO)
 **     Description :
-**         This method sets a new duty-cycle ratio. Ratio is expressed
-**         as a 16-bit unsigned integer number. 0 - FFFF value is
-**         proportional to ratio 0 - 100%. The method is available
-**         only if it is not selected list of predefined values in
-**         <Starting pulse width> property. 
-**         Note: Calculated duty depends on the timer possibilities and
-**         on the selected period.
-**     Parameters  :
-**         NAME            - DESCRIPTION
-**         Ratio           - Ratio to set. 0 - 65535 value is
-**                           proportional to ratio 0 - 100%
+**         This method returns an input value.
+**           a) direction = Input  : reads the input value from the
+**                                   pin and returns it
+**           b) direction = Output : returns the last written value
+**         Note: This component is set to work in Output direction only.
+**     Parameters  : None
 **     Returns     :
-**         ---             - Error code, possible codes:
-**                           ERR_OK - OK
-**                           ERR_SPEED - This device does not work in
-**                           the active speed mode
+**         ---             - Input value. Possible values:
+**                           FALSE - logical "0" (Low level)
+**                           TRUE - logical "1" (High level)
+
 ** ===================================================================
 */
-#define magnet_SetRatio16(Ratio) (PwmLdd2_SetRatio16(PwmLdd2_DeviceData, Ratio))
+#define magnet_GetVal() (BitIoLdd3_GetVal(BitIoLdd3_DeviceData))
 
 /*
 ** ===================================================================
-**     Method      :  magnet_SetDutyUS (component PWM)
+**     Method      :  magnet_PutVal (component BitIO)
 **     Description :
-**         This method sets the new duty value of the output signal.
-**         The duty is expressed in microseconds as a 16-bit
-**         unsigned integer number.
+**         This method writes the new output value.
 **     Parameters  :
-**         NAME            - DESCRIPTION
-**         Time            - Duty to set [in microseconds]
-**                      (0 to --- us in high speed mode)
-**     Returns     :
-**         ---             - Error code, possible codes:
-**                           ERR_OK - OK
-**                           ERR_SPEED - This device does not work in
-**                           the active speed mode
-**                           ERR_MATH - Overflow during evaluation
-**                           ERR_RANGE - Parameter out of range
+**         NAME       - DESCRIPTION
+**         Val             - Output value. Possible values:
+**                           FALSE - logical "0" (Low level)
+**                           TRUE - logical "1" (High level)
+**     Returns     : Nothing
 ** ===================================================================
 */
-#define magnet_SetDutyUS(Time) (PwmLdd2_SetDutyUS(PwmLdd2_DeviceData, Time))
+#define magnet_PutVal(Val) (BitIoLdd3_PutVal(BitIoLdd3_DeviceData, (Val)))
 
 /*
 ** ===================================================================
-**     Method      :  magnet_SetDutyMS (component PWM)
+**     Method      :  magnet_ClrVal (component BitIO)
 **     Description :
-**         This method sets the new duty value of the output signal.
-**         The duty is expressed in milliseconds as a 16-bit
-**         unsigned integer number.
-**     Parameters  :
-**         NAME            - DESCRIPTION
-**         Time            - Duty to set [in milliseconds]
-**                      (0 to 20 ms in high speed mode)
-**     Returns     :
-**         ---             - Error code, possible codes:
-**                           ERR_OK - OK
-**                           ERR_SPEED - This device does not work in
-**                           the active speed mode
-**                           ERR_MATH - Overflow during evaluation
-**                           ERR_RANGE - Parameter out of range
+**         This method clears (sets to zero) the output value.
+**     Parameters  : None
+**     Returns     : Nothing
 ** ===================================================================
 */
-#define magnet_SetDutyMS(Time) (PwmLdd2_SetDutyMS(PwmLdd2_DeviceData, Time))
+#define magnet_ClrVal() (BitIoLdd3_ClrVal(BitIoLdd3_DeviceData))
+
+/*
+** ===================================================================
+**     Method      :  magnet_SetVal (component BitIO)
+**     Description :
+**         This method sets (sets to one) the output value.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+#define magnet_SetVal() (BitIoLdd3_SetVal(BitIoLdd3_DeviceData))
+
+/*
+** ===================================================================
+**     Method      :  magnet_NegVal (component BitIO)
+**     Description :
+**         This method negates (inverts) the output value.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+#define magnet_NegVal() (BitIoLdd3_NegVal(BitIoLdd3_DeviceData))
 
 /* END magnet. */
 

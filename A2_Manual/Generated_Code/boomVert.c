@@ -7,7 +7,7 @@
 **     Version     : Component 02.241, Driver 01.01, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-20, 13:15, # CodeGen: 8
+**     Date/Time   : 2017-10-20, 15:34, # CodeGen: 14
 **     Abstract    :
 **         This component implements a pulse-width modulation generator
 **         that generates signal with variable duty and fixed cycle. 
@@ -21,7 +21,7 @@
 **          Interrupt service/event                        : Disabled
 **          Period                                         : 20 ms
 **          Starting pulse width                           : 0 ms
-**          Initial polarity                               : low
+**          Initial polarity                               : high
 **          Same period in modes                           : no
 **          Component uses entire timer                    : no
 **          Initialization                                 : 
