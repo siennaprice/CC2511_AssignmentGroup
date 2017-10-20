@@ -59,54 +59,27 @@ int main(void)
 
   /* Write your code here */
   //-----------------------------------------------------------------------------------------------------
-  byte rh1, rv1, lh1, lv1, i = 0;
-  byte rh2, rv2, lh2, lv2 = 0;
-  bool rs, ls = false;
+  int16 joysticks1[4], joysticks2[4];
+  int i = 0;
+
   DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
-  AD1_GetChanValue8(0, &rh1);
-  AD1_GetChanValue8(1, &rv1);
-  AD1_GetChanValue8(2, &lv1);
-  AD1_GetChanValue8(3, &lh1);
+  AD1_GetValue16(joysticks1);
 
   for(;;) {
-
 	  AD1_Measure(true);
-	  AD1_GetChanValue8(0, &rh2);
-	  AD1_GetChanValue8(1, &rv2);
-	  AD1_GetChanValue8(2, &lv2);
-	  AD1_GetChanValue8(3, &lh2);
-	  if (rh1 != rh2)
-		  UpdateRH(&rh2);
+	  AD1_GetValue16(joysticks2);
 
-	  if (rv1 != rv2)
-		  UpdateRH(&rv2);
-
-	  if (lh1 != lh2)
-		  UpdateRH(&lh2);
-
-	  if (lv1 != lv2)
-		  UpdateRH(&lv2);
-
-	  Term1_MoveTo(11, 7);
-	  if(rightSwitch_GetVal() == 1) {
-		  Term1_SendStr("Pressed");
-	  } else {
-		  Term1_SendStr("Off    ");
+	  // If the values change, update the display
+	  for (i = 0; i = 4; i++){
+		if (joysticks1[i] != joysticks2[i])
+			UpdateDisplay(joysticks2, i);
 	  }
-
-	  Term1_MoveTo(11, 3);
-	  if(leftSwitch_GetVal() == 1){
-		  Term1_SendStr("Pressed");
-	  } else {
-		  Term1_SendStr("Off    ");
+	  // Save the last set of values
+	  for (i = 0; i = 4; i++){
+	  joysticks1[i] = joysticks2[i];
 	  }
-
-	  rh1 = rh2;
-	  rv1 = rv2;
-	  lh1 = lh2;
-	  lv1 = lv2;
   }
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/

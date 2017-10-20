@@ -1,0 +1,47 @@
+/*
+ * OurMethods.c
+ *
+ *  Created on: 19 Oct 2017
+ *      Author: jc240979
+ */
+#include "OurMethods.h"
+#include "PE_Types.h"
+#include "Term1.h"
+#include "stdbool.h"
+
+void DisplaySetUp (void) {
+	Term1_MoveTo(1, 1);
+	Term1_Cls();
+	Term1_SendStr("RHor    - \r\n");
+	Term1_SendStr("RVert   - \r\n");
+	Term1_SendStr("RSwitch - \r\n\r\n");
+	Term1_SendStr("LHor    - \r\n");
+	Term1_SendStr("LVert   - \r\n");
+	Term1_SendStr("LSwitch - \r\n");
+}
+
+void UpdateRH (byte *val) {
+	Term1_MoveTo(11, 1);
+	Term1_SendNum(val);
+	Term1_SendStr("   ");
+}
+
+void UpdateRV (byte *val) {
+	Term1_MoveTo(11, 2);
+	Term1_SendNum(val);
+	Term1_SendStr("   ");
+}
+
+void UpdateLH (byte *val) {
+	Term1_MoveTo(11, 5);
+	Term1_SendNum(val);
+	Term1_SendStr("   ");
+}
+
+void UpdateLV (byte *val) {
+	Term1_MoveTo(11, 6);
+	Term1_SendNum(val);
+	Term1_SendStr("   ");
+}
+
+

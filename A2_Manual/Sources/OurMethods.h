@@ -11,13 +11,7 @@
 
 void DisplaySetUp (void);
 
-void UpdateRH (byte *val);
-
-void UpdateRV (byte *val);
-
-void UpdateLH (byte *val);
-
-void UpdateLV (byte *val);
+void UpdateDisplay (int16 *values, int index);
 
 
 #endif /* SOURCES_OURMETHODS_H_ */
