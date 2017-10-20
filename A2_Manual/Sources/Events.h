@@ -42,6 +42,11 @@
 #include "BitIoLdd1.h"
 #include "rightSwitch.h"
 #include "BitIoLdd2.h"
+#include "boomVert.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
+#include "magnet.h"
+#include "PwmLdd2.h"
 
 #ifdef __cplusplus
 extern "C" {

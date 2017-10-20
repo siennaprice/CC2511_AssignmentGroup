@@ -39,6 +39,11 @@
 #include "BitIoLdd1.h"
 #include "rightSwitch.h"
 #include "BitIoLdd2.h"
+#include "boomVert.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
+#include "magnet.h"
+#include "PwmLdd2.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -60,26 +65,43 @@ int main(void)
   /* Write your code here */
   //-----------------------------------------------------------------------------------------------------
   int16 joysticks1[4], joysticks2[4];
-  int i = 0;
 
   DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
   AD1_GetValue16(joysticks1);
+  //set boom vertical to not moving
+  boomVert_SetDutyUS(1000);
+  //set magnet vertical to not moving
+  magnet_SetDutyUS(1500);
 
   for(;;) {
 	  AD1_Measure(true);
 	  AD1_GetValue16(joysticks2);
 
 	  // If the values change, update the display
-	  for (i = 0; i = 4; i++){
+	  for (int i = 0; i <= 4; i++){
 		if (joysticks1[i] != joysticks2[i])
 			UpdateDisplay(joysticks2, i);
 	  }
-	  // Save the last set of values
-	  for (i = 0; i = 4; i++){
+
+	  // Save the latest set of values
+	  for (int i = 0; i <= 4; i++){
 	  joysticks1[i] = joysticks2[i];
 	  }
+
+	  //if right vertical is detected
+//	  if(joysticks1[1] > 45000){
+//		  magnet_SetDutyUS(1000);
+//	  }
+//	  else if(joysticks1[1] < 1000){
+//		  magnet_SetDutyUS(2000);
+//	  }
+//	  else{
+//		  magnet_SetDutyUS(1500);
+//	  }
+
+
   }
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
