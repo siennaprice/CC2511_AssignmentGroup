@@ -46,7 +46,7 @@
 
 volatile bool flag = 0;
 volatile char buffer[100];
-volatile unsigned int index = 0;
+volatile unsigned int index;
 // ----- prints a rectangle window --------
 void window(){
 	Term1_SetColor(clBlack, clYellow);
@@ -96,9 +96,13 @@ int main(void)
 
   for(;;){
 	  if(flag){
-		  if(0 == strcmp(buffer, "w")){
-			  Term1_MoveTo(15,5);
-			  Term1_SendStr("i just received a W");
+		  if(0 == strcmp(buffer, "move to 10")){
+			  Term1_MoveTo(12,10);
+			  Term1_SendStr("i just got told to move to 10");
+			  Term1_MoveTo(12,7);
+			  Term1_EraseLine();
+			  commands();
+			  flag = false;
 		  }
 	 }
   }

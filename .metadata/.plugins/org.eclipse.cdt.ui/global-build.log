@@ -876,3 +876,1335 @@ make: Nothing to be done for `all'.
 10:59:48 **** Incremental Build of configuration Debug for project A2_Manual ****
 make all 
 make: Nothing to be done for `all'.
+09:08:50 **** Clean-only build of configuration Debug for project A2 ****
+make clean 
+rm -rf  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o  ./Sources/Events.d ./Sources/main.d  ./Project_Settings/Startup_Code/startup.d  ./Generated_Code/ASerialLdd1.d ./Generated_Code/Cpu.d ./Generated_Code/Inhr1.d ./Generated_Code/PE_LDD.d ./Generated_Code/Term1.d ./Generated_Code/Vectors.d  A2.elf
+' '
+09:08:51 **** Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "w")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building file: ../Project_Settings/Startup_Code/startup.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+'Finished building: ../Project_Settings/Startup_Code/startup.c'
+' '
+'Building file: ../Generated_Code/ASerialLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+'Finished building: ../Generated_Code/ASerialLdd1.c'
+' '
+'Building file: ../Generated_Code/Cpu.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+'Finished building: ../Generated_Code/Cpu.c'
+' '
+'Building file: ../Generated_Code/Inhr1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Inhr1.d" -MT"Generated_Code/Inhr1.o" -c -o "Generated_Code/Inhr1.o" "../Generated_Code/Inhr1.c"
+'Finished building: ../Generated_Code/Inhr1.c'
+' '
+'Building file: ../Generated_Code/PE_LDD.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+'Finished building: ../Generated_Code/PE_LDD.c'
+' '
+'Building file: ../Generated_Code/Term1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Term1.d" -MT"Generated_Code/Term1.o" -c -o "Generated_Code/Term1.o" "../Generated_Code/Term1.c"
+'Finished building: ../Generated_Code/Term1.c'
+' '
+'Building file: ../Generated_Code/Vectors.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+'Finished building: ../Generated_Code/Vectors.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:09:57 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+../Sources/Events.c:87:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+   Term1_SendStr(c);
+   ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/Events.c:30:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:163:6: note: expected 'void *' but argument is of type 'char'
+ void Term1_SendStr(void *str);
+      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:12:07 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:18:13 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+./Sources/main.o:(.bss.index+0x0): multiple definition of `index'
+./Sources/Events.o:C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2\Debug/../Sources/Events.c:53: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [A2.elf] Error 1
+09:19:14 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+./Sources/main.o:(.bss.index+0x0): multiple definition of `index'
+./Sources/Events.o:C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2\Debug/../Sources/Events.c:76: first defined here
+./Generated_Code/Cpu.o: In function `Cpu_INT_NMIInterrupt':
+C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2\Debug/../Generated_Code/Cpu.c:339: undefined reference to `Cpu_OnNMIINT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [A2.elf] Error 1
+09:19:33 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:19:49 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+./Sources/main.o:(.bss.index+0x0): multiple definition of `index'
+./Sources/Events.o:C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2\Debug/../Sources/Events.c:53: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [A2.elf] Error 1
+09:20:37 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "w")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:21:57 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "w")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:22:38 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:87:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+   Term1_SendStr(buffer[index]);
+   ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/Events.c:30:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:163:6: note: expected 'void *' but argument is of type 'char'
+ void Term1_SendStr(void *str);
+      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:23:41 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:87:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+   Term1_SendStr(buffer[1]);
+   ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/Events.c:30:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:163:6: note: expected 'void *' but argument is of type 'char'
+ void Term1_SendStr(void *str);
+      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:25:18 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:87:3: warning: implicit declaration of function 'Char' [-Wimplicit-function-declaration]
+   Term1_SendStr(Char(&c));
+   ^
+../Sources/Events.c:87:3: warning: passing argument 1 of 'Term1_SendStr' makes pointer from integer without a cast [enabled by default]
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/Events.c:30:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:163:6: note: expected 'void *' but argument is of type 'int'
+ void Term1_SendStr(void *str);
+      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+./Sources/Events.o: In function `Inhr1_OnRxChar':
+C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2\Debug/../Sources/Events.c:87: undefined reference to `Char'
+collect2.exe: error: ld returned 1 exit status
+make: *** [A2.elf] Error 1
+09:25:26 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:87:17: error: expected expression before 'char'
+   Term1_SendStr(char(&c));
+                 ^
+make: *** [Sources/Events.o] Error 1
+09:25:57 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:87:3: warning: passing argument 1 of 'Term1_SendNum' makes integer from pointer without a cast [enabled by default]
+   Term1_SendNum(&c);
+   ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/Events.c:30:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:176:6: note: expected 'int32_t' but argument is of type 'char *'
+ void Term1_SendNum(int32_t number);
+      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:26:55 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+make: Nothing to be done for `all'.
+09:27:54 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+make: Nothing to be done for `all'.
+09:29:22 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:30:07 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:23: warning: multi-character character constant [-Wmultichar]
+   if(buffer[index] == '\r\n'){
+                       ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:30:49 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:31:53 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:11: warning: multi-character character constant [-Wmultichar]
+   if(c == '\r\n'){
+           ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:32:17 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:90:1: error: unknown type name 'r'
+ r  PE_low_level_init();
+ ^
+../Sources/main.c:90:4: error: conflicting types for 'PE_low_level_init'
+ r  PE_low_level_init();
+    ^
+In file included from ../Sources/main.c:31:0:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Cpu.h:160:6: note: previous declaration of 'PE_low_level_init' was here
+ void PE_low_level_init(void);
+      ^
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "w")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+make: *** [Sources/main.o] Error 1
+09:32:48 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "w")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:33:20 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:79:12: warning: multi-character character constant [-Wmultichar]
+   if(&c == '\r\n'){
+            ^
+../Sources/Events.c:79:9: warning: comparison between pointer and integer [enabled by default]
+   if(&c == '\r\n'){
+         ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:33:47 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:35:12 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:36:10 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c:90:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [Sources/Events.o] Error 1
+09:36:20 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:36:42 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:83:22: warning: multi-character character constant [-Wmultichar]
+  if(buffer[index] == '\r\n'){
+                      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:37:27 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:38:11 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:83:11: warning: multi-character character constant [-Wmultichar]
+  if(&c == '\r\n'){
+           ^
+../Sources/Events.c:83:8: warning: comparison between pointer and integer [enabled by default]
+  if(&c == '\r\n'){
+        ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:39:08 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:83:8: warning: comparison between pointer and integer [enabled by default]
+  if(&c == 'g'){
+        ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:39:32 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:40:18 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:41:02 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:41:43 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:42:19 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:42:56 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:83:22: warning: multi-character character constant [-Wmultichar]
+  if(buffer[index] == '\r\n'){
+                      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:43:43 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:45:04 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:45:28 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "g")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:46:32 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:48:16 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:49:04 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:84:22: warning: multi-character character constant [-Wmultichar]
+  if(buffer[index] == '\r\n'){
+                      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:50:29 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:84:24: warning: multi-character character constant [-Wmultichar]
+  if(buffer[index-1] == '\r\n' ){
+                        ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:51:07 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:52:51 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:53:25 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:54:27 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:54:58 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:55:33 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+../Sources/Events.c: In function 'Inhr1_OnRxChar':
+../Sources/Events.c:83:22: warning: multi-character character constant [-Wmultichar]
+  if(buffer[index] == '\r\n' ){
+                      ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:56:13 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:56:53 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c:73:30: warning: 'index' initialized and declared 'extern' [enabled by default]
+ extern volatile unsigned int index = 0;
+                              ^
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:57:38 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "g")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:58:24 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+09:59:16 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+10:00:12 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:100:24: error: expected ')' before ';' token
+      Term1_MoveTo(15,15;)
+                        ^
+../Sources/main.c:101:6: error: expected ';' before 'Term1_SendStr'
+      Term1_SendStr("i just got told to move to 10");
+      ^
+make: *** [Sources/main.o] Error 1
+10:00:20 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+10:03:07 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+10:04:33 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../Sources/main.c:100:6: error: too many arguments to function 'Term1_EraseLine'
+      Term1_EraseLine(11,7);
+      ^
+In file included from ../Sources/Events.h:36:0,
+                 from ../Sources/main.c:32:
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code/Term1.h:239:6: note: declared here
+ void Term1_EraseLine(void);
+      ^
+make: *** [Sources/main.o] Error 1
+10:05:20 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+10:16:44 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:96:33: error: 'boomVertDS' undeclared (first use in this function)
+    if (joysticks1[1] > 45000 && boomVertDS < 65530) { // up
+                                 ^
+../Sources/main.c:96:33: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Sources/main.o] Error 1
+10:17:25 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+'Finished building: ../Sources/Events.c'
+' '
+'Building file: ../Sources/OurMethods.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/OurMethods.d" -MT"Sources/OurMethods.o" -c -o "Sources/OurMethods.o" "../Sources/OurMethods.c"
+'Finished building: ../Sources/OurMethods.c'
+' '
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building file: ../Project_Settings/Startup_Code/startup.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+'Finished building: ../Project_Settings/Startup_Code/startup.c'
+' '
+'Building file: ../Generated_Code/AD1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AD1.d" -MT"Generated_Code/AD1.o" -c -o "Generated_Code/AD1.o" "../Generated_Code/AD1.c"
+'Finished building: ../Generated_Code/AD1.c'
+' '
+'Building file: ../Generated_Code/ASerialLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/ASerialLdd1.d" -MT"Generated_Code/ASerialLdd1.o" -c -o "Generated_Code/ASerialLdd1.o" "../Generated_Code/ASerialLdd1.c"
+'Finished building: ../Generated_Code/ASerialLdd1.c'
+' '
+'Building file: ../Generated_Code/AdcLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/AdcLdd1.d" -MT"Generated_Code/AdcLdd1.o" -c -o "Generated_Code/AdcLdd1.o" "../Generated_Code/AdcLdd1.c"
+'Finished building: ../Generated_Code/AdcLdd1.c'
+' '
+'Building file: ../Generated_Code/BitIoLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd1.d" -MT"Generated_Code/BitIoLdd1.o" -c -o "Generated_Code/BitIoLdd1.o" "../Generated_Code/BitIoLdd1.c"
+'Finished building: ../Generated_Code/BitIoLdd1.c'
+' '
+'Building file: ../Generated_Code/BitIoLdd2.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd2.d" -MT"Generated_Code/BitIoLdd2.o" -c -o "Generated_Code/BitIoLdd2.o" "../Generated_Code/BitIoLdd2.c"
+'Finished building: ../Generated_Code/BitIoLdd2.c'
+' '
+'Building file: ../Generated_Code/BitIoLdd3.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/BitIoLdd3.d" -MT"Generated_Code/BitIoLdd3.o" -c -o "Generated_Code/BitIoLdd3.o" "../Generated_Code/BitIoLdd3.c"
+'Finished building: ../Generated_Code/BitIoLdd3.c'
+' '
+'Building file: ../Generated_Code/Cpu.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -c -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+'Finished building: ../Generated_Code/Cpu.c'
+' '
+'Building file: ../Generated_Code/Inhr1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Inhr1.d" -MT"Generated_Code/Inhr1.o" -c -o "Generated_Code/Inhr1.o" "../Generated_Code/Inhr1.c"
+'Finished building: ../Generated_Code/Inhr1.c'
+' '
+'Building file: ../Generated_Code/PE_LDD.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PE_LDD.d" -MT"Generated_Code/PE_LDD.o" -c -o "Generated_Code/PE_LDD.o" "../Generated_Code/PE_LDD.c"
+'Finished building: ../Generated_Code/PE_LDD.c'
+' '
+'Building file: ../Generated_Code/PwmLdd1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PwmLdd1.d" -MT"Generated_Code/PwmLdd1.o" -c -o "Generated_Code/PwmLdd1.o" "../Generated_Code/PwmLdd1.c"
+'Finished building: ../Generated_Code/PwmLdd1.c'
+' '
+'Building file: ../Generated_Code/PwmLdd2.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/PwmLdd2.d" -MT"Generated_Code/PwmLdd2.o" -c -o "Generated_Code/PwmLdd2.o" "../Generated_Code/PwmLdd2.c"
+'Finished building: ../Generated_Code/PwmLdd2.c'
+' '
+'Building file: ../Generated_Code/TU1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/TU1.d" -MT"Generated_Code/TU1.o" -c -o "Generated_Code/TU1.o" "../Generated_Code/TU1.c"
+'Finished building: ../Generated_Code/TU1.c'
+' '
+'Building file: ../Generated_Code/Term1.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Term1.d" -MT"Generated_Code/Term1.o" -c -o "Generated_Code/Term1.o" "../Generated_Code/Term1.c"
+'Finished building: ../Generated_Code/Term1.c'
+' '
+'Building file: ../Generated_Code/Vectors.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/Vectors.d" -MT"Generated_Code/Vectors.o" -c -o "Generated_Code/Vectors.o" "../Generated_Code/Vectors.c"
+'Finished building: ../Generated_Code/Vectors.c'
+' '
+'Building file: ../Generated_Code/boomVert.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/boomVert.d" -MT"Generated_Code/boomVert.o" -c -o "Generated_Code/boomVert.o" "../Generated_Code/boomVert.c"
+'Finished building: ../Generated_Code/boomVert.c'
+' '
+'Building file: ../Generated_Code/leftSwitch.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/leftSwitch.d" -MT"Generated_Code/leftSwitch.o" -c -o "Generated_Code/leftSwitch.o" "../Generated_Code/leftSwitch.c"
+'Finished building: ../Generated_Code/leftSwitch.c'
+' '
+'Building file: ../Generated_Code/magnet.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/magnet.d" -MT"Generated_Code/magnet.o" -c -o "Generated_Code/magnet.o" "../Generated_Code/magnet.c"
+'Finished building: ../Generated_Code/magnet.c'
+' '
+'Building file: ../Generated_Code/rightSwitch.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/rightSwitch.d" -MT"Generated_Code/rightSwitch.o" -c -o "Generated_Code/rightSwitch.o" "../Generated_Code/rightSwitch.c"
+'Finished building: ../Generated_Code/rightSwitch.c'
+' '
+'Building file: ../Generated_Code/stringThingy.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Generated_Code/stringThingy.d" -MT"Generated_Code/stringThingy.o" -c -o "Generated_Code/stringThingy.o" "../Generated_Code/stringThingy.c"
+'Finished building: ../Generated_Code/stringThingy.c'
+' '
+'Building file: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF".metadata/.plugins/org.eclipse.cdt.make.core/specs.d" -MT".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" -c -o ".metadata/.plugins/org.eclipse.cdt.make.core/specs.o" "../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c"
+'Finished building: ../.metadata/.plugins/org.eclipse.cdt.make.core/specs.c'
+' '
+'Building target: crane.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/boomVert.o ./Generated_Code/leftSwitch.o ./Generated_Code/magnet.o ./Generated_Code/rightSwitch.o ./Generated_Code/stringThingy.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+'Finished building target: crane.elf'
+' '
+10:18:31 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: crane.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/boomVert.o ./Generated_Code/leftSwitch.o ./Generated_Code/magnet.o ./Generated_Code/rightSwitch.o ./Generated_Code/stringThingy.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+'Finished building target: crane.elf'
+' '
+10:20:13 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: crane.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/boomVert.o ./Generated_Code/leftSwitch.o ./Generated_Code/magnet.o ./Generated_Code/rightSwitch.o ./Generated_Code/stringThingy.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+'Finished building target: crane.elf'
+' '
+10:20:36 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+'Finished building: ../Sources/main.c'
+' '
+'Building target: crane.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Project_Settings/Linker_Files" -Wl,-Map,"crane.map" -specs=nano.specs -specs=nosys.specs -o "crane.elf"  ./Sources/Events.o ./Sources/OurMethods.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/AD1.o ./Generated_Code/ASerialLdd1.o ./Generated_Code/AdcLdd1.o ./Generated_Code/BitIoLdd1.o ./Generated_Code/BitIoLdd2.o ./Generated_Code/BitIoLdd3.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/PwmLdd1.o ./Generated_Code/PwmLdd2.o ./Generated_Code/TU1.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o ./Generated_Code/boomVert.o ./Generated_Code/leftSwitch.o ./Generated_Code/magnet.o ./Generated_Code/rightSwitch.o ./Generated_Code/stringThingy.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+'Finished building target: crane.elf'
+' '
+10:20:56 **** Incremental Build of configuration Debug for project A2_Manual ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,24 @@
+10:05:20 **** Incremental Build of configuration Debug for project A2 ****
+make all 
+'Building file: ../Sources/main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/PDD" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Static_Code/IO_Map" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Sources" -I"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:99:5: warning: passing argument 1 of 'strcmp' discards 'volatile' qualifier from pointer target type [enabled by default]
+     if(0 == strcmp(buffer, "move to 10")){
+     ^
+In file included from c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\stdio.h:29:0,
+                 from ../Sources/main.c:42:
+c:\freescale\kds_3.0.0\toolchain\arm-none-eabi\include\string.h:28:6: note: expected 'const char *' but argument is of type 'volatile char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../Sources/main.c'
+' '
+'Building target: A2.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2/Project_Settings/Linker_Files" -Wl,-Map,"A2.map" -specs=nano.specs -specs=nosys.specs -o "A2.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/ASerialLdd1.o ./Generated_Code/Cpu.o ./Generated_Code/Inhr1.o ./Generated_Code/PE_LDD.o ./Generated_Code/Term1.o ./Generated_Code/Vectors.o   
+'Finished building target: A2.elf'
+' '
+
+10:05:20 Build Finished (took 587ms)
+

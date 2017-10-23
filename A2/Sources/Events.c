@@ -70,23 +70,22 @@ void Cpu_OnNMIINT(void)
 ** ===================================================================
 */
 extern volatile char buffer[100];
-extern volatile unsigned int index;
+extern volatile unsigned int index = 0;
 extern volatile bool flag;
 void Inhr1_OnRxChar(void)
 {
 	char c;
+	//need to handle buffer overflow
 	if(ERR_OK == Inhr1_RecvChar(&c)){
-		if(buffer[index] == '\r\n'){
-			buffer[index] = '\0';
-			buffer[index] = 0;
-			flag = 1;
-		}
-		else{
 		buffer[index] = c;
-		index++;
-		Term1_SendStr(&c);
-		}
+		Term1_SendChar(buffer[index]);
 	}
+	if(buffer[index] == '\r' ){
+		buffer[index] = 0;
+		buffer[index] = '\0';
+		flag = 1;
+	}
+	index++;
 }
 
 /* END Events */
