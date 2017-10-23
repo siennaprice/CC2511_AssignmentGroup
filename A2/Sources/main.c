@@ -33,6 +33,17 @@
 #include "Term1.h"
 #include "Inhr1.h"
 #include "ASerialLdd1.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
+#include "leftSwitch.h"
+#include "BitIoLdd1.h"
+#include "rightSwitch.h"
+#include "BitIoLdd2.h"
+#include "stringThingy.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
+#include "magnet.h"
+#include "BitIoLdd3.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -42,44 +53,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-
+#include "OurMethods.h"
 
 volatile bool flag = 0;
 volatile char buffer[100];
 volatile unsigned int index;
-// ----- prints a rectangle window --------
-void window(){
-	Term1_SetColor(clBlack, clYellow);
-	  for(int i = 10; i < 60; i++){
-		  Term1_MoveTo(i,1);
-		  Term1_SendStr("-");
-	  }
-	  for(int i = 10 ; i<60 ; i++){
-		  Term1_MoveTo(i,20);
-		  Term1_SendStr("-");
-	  }
-	  for(int i = 2 ; i<21 ; i++){
-		  Term1_MoveTo(10,i);
-		  Term1_SendStr("|");
-	   }
-	  for(int i = 2 ; i<21 ; i++){
-		  Term1_MoveTo(59,i);
-		  Term1_SendStr("|");
-	  }
-}
-
-//----Prints user options in the window ---
-void commands(){
-	Term1_SetColor(clWhite, clBlack);
-	Term1_MoveTo(12,3);
-	Term1_SendStr("Use A and D to Go left and Right: ");
-	Term1_MoveTo(12,5);
-	Term1_SendStr("Use W and S To use the Boom: ");
-	Term1_MoveTo(12,7);
-	Term1_SendStr("Input: ");
-
-}
-
 /*lint -save  -e970 Disable MISRA rule (6.3) checking. */
 int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
@@ -91,21 +69,34 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   //WRITE CODE HERE
-  window();
-  commands();
 
+  commandWindow();
+  inputWindow();
+  instructions();
+  userInput();
+  __asm ("wfi");
+
+  //something is stuffed, it will detect the new string however, it will only ever print the first thing it detects, i.e if u enter a second command this wont be detected. As if the buffer isnt being reset properly, but i think it is to my best guess
   int command;
   for(;;){
-	  if(flag){
+	  while(flag){
 		  if(sscanf(buffer, "go up %i", &command) == 1){
-			  Term1_MoveTo(12,10);
+			  Term1_MoveTo(67,9);
 			  Term1_SendStr("going up ");
 			  Term1_SendNum(command);
-			  Term1_MoveTo(12,7);
+			  Term1_MoveTo(67,6);
 			  Term1_EraseLine();
-			  commands();
-			  flag = false;
+			  userInput();
 		  }
+		  else if(sscanf(buffer, "go down %i", &command) == 1){
+			  Term1_MoveTo(67,9);
+			  Term1_SendStr("going down ");
+			  Term1_SendNum(command);
+			  Term1_MoveTo(67,6);
+			  Term1_EraseLine();
+			  userInput();
+		 }
+		  flag = false;
 	 }
   }
 

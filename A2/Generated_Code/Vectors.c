@@ -6,7 +6,7 @@
 **     Version     : Component 01.009, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-16, 11:09, # CodeGen: 5
+**     Date/Time   : 2017-10-23, 20:55, # CodeGen: 15
 **     Abstract    :
 **
 **     Settings    :
@@ -58,6 +58,17 @@
   #include "Term1.h"
   #include "Inhr1.h"
   #include "ASerialLdd1.h"
+  #include "AD1.h"
+  #include "AdcLdd1.h"
+  #include "leftSwitch.h"
+  #include "BitIoLdd1.h"
+  #include "rightSwitch.h"
+  #include "BitIoLdd2.h"
+  #include "stringThingy.h"
+  #include "PwmLdd1.h"
+  #include "TU1.h"
+  #include "magnet.h"
+  #include "BitIoLdd3.h"
   #include "Events.h"
 
 
@@ -115,7 +126,7 @@
     (tIsrFunc)&Cpu_Interrupt,          /* 0x23  0x0000008C   -   ivINT_UART1_ERR               unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x24  0x00000090   -   ivINT_UART2_RX_TX             unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x25  0x00000094   -   ivINT_UART2_ERR               unused by PE */
-    (tIsrFunc)&Cpu_Interrupt,          /* 0x26  0x00000098   -   ivINT_ADC0                    unused by PE */
+    (tIsrFunc)&AdcLdd1_MeasurementCompleteInterrupt, /* 0x26  0x00000098   8   ivINT_ADC0                    used by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x27  0x0000009C   -   ivINT_CMP0                    unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x28  0x000000A0   -   ivINT_CMP1                    unused by PE */
     (tIsrFunc)&Cpu_Interrupt,          /* 0x29  0x000000A4   -   ivINT_FTM0                    unused by PE */

@@ -6,7 +6,7 @@
 **     Version     : Component 01.009, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-16, 10:02, # CodeGen: 1
+**     Date/Time   : 2017-10-23, 20:55, # CodeGen: 15
 **     Abstract    :
 **
 **     Settings    :
@@ -64,6 +64,17 @@
 #include "Term1.h"
 #include "Inhr1.h"
 #include "ASerialLdd1.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
+#include "leftSwitch.h"
+#include "BitIoLdd1.h"
+#include "rightSwitch.h"
+#include "BitIoLdd2.h"
+#include "stringThingy.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
+#include "magnet.h"
+#include "BitIoLdd3.h"
 
 
 /*
