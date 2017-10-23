@@ -94,11 +94,13 @@ int main(void)
   window();
   commands();
 
+  int command;
   for(;;){
 	  if(flag){
-		  if(0 == strcmp(buffer, "move to 10")){
+		  if(sscanf(buffer, "go up %i", &command) == 1){
 			  Term1_MoveTo(12,10);
-			  Term1_SendStr("i just got told to move to 10");
+			  Term1_SendStr("going up ");
+			  Term1_SendNum(command);
 			  Term1_MoveTo(12,7);
 			  Term1_EraseLine();
 			  commands();

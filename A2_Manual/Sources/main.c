@@ -66,19 +66,19 @@ int main(void)
 
   /* Write your code here */
   //-----------------------------------------------------------------------------------------------------
-    int16 joysticks1[4], joysticks2[4];
-    word boomVertDS = 1000;
-    word magnet = 1500;
-    DisplaySetUp();
-    AD1_Calibrate(true);
-    AD1_Measure(true);
-    AD1_GetValue16(joysticks1);
-    //set boom vertical to not moving
-    boomVert_SetDutyUS(boomVertDS);
-    //set stringThingy vertical to not moving
-    //stringThingy_SetDutyUS(1500);
+  int16 joysticks1[4], joysticks2[4];
+  word boomVertDS = 1000;
+  word string = 1500;
+  DisplaySetUp();
+  AD1_Calibrate(true);
+  AD1_Measure(true);
+  AD1_GetValue16(joysticks1);
+  //set boom vertical to not moving
+  boomVert_SetDutyUS(boomVertDS);
+  //set stringThingy vertical to not moving
+  //stringThingy_SetDutyUS(magnet);
 
-  for(;;) {
+for(;;) {
 	  AD1_Measure(true);
 	  AD1_GetValue16(joysticks2);
 
@@ -94,26 +94,39 @@ int main(void)
 	  }
 
 	  // if right vertical is detected; boom up/down
-	  // note: condence this later
-	  if (joysticks1[1] > 45000 && boomVertDS < 65530) { // up
-		  boomVertDS += 10;
-	  }
-	  if (joysticks1[1] < 1000 && boomVertDS > 10) { // down
-		  boomVertDS -= 10;
-	  }
-	  boomVert_SetDutyUS(boomVertDS);
+	  // note: condense this later
+//	  if (joysticks1[1] > 40 && joystick1[1] < 100) { // up
+//		  boomVert_SetDutyUS(2000);
+//	  }
+//	  else if (joysticks1[1] < -30) { // down
+//		  boomVert_SetDutyUS(1000);
+//	  }
+//	  else{
+//	  	boomVert_SetDutyUS(1500);
+//	  }
 
 	   //If left vertical is detected; magnet up/down
-	  if (joysticks1[2] > 45000) {
-		  stringThingy_SetDutyUS(2000); // up
-	  } else if (joysticks1[2] < 1000) {
+	  if (joysticks1[2] > 40 && joysticks1[2] < 100) {
 		  stringThingy_SetDutyUS(1000); // down
+	  } else if (joysticks1[2] < -30) {
+		  stringThingy_SetDutyUS(2000); // up
 	  } else {
-		  stringThingy_SetDutyUS(1500); // not moving
+		  stringThingy_SetDutyUS(1600); // not moving
 	  }
 
-	  // magnet switch on/off
-  }
+	  //turns magnet on and off (have to hold switch to keep magnet on)
+	  if(leftSwitch_GetVal() == 1){
+		  //this is being reached, but it is not sending putVal to the magnet.
+		  magnet_PutVal(1);
+		  Term1_SendStr("Magnet on");
+	  }
+	  if(leftSwitch_GetVal() == 0){
+		 // magnet_PutVal(magnet);
+		  Term1_SendStr("Magnet off");
+	  }
+
+}
+
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

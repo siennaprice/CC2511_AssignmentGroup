@@ -757,7 +757,7 @@ Autoselect
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="20 ms" />
       <Starting_pulse_width v="0 ms" />
-      <Initial_polarity v="low" />
+      <Initial_polarity v="high" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -781,7 +781,7 @@ Autoselect
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="20 ms" />
             <Starting_pulse_width v="0 ms" />
-            <Initial_polarity v="low" />
+            <Initial_polarity v="high" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">
@@ -864,9 +864,9 @@ Autoselect
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM1_C1V" />
             <Offset v="0 ms" />
-            <enumgroup name="Output on compare" v="Set">
-              <Output_on_overrun v="Clear" />
-              <Initial_state v="Low" />
+            <enumgroup name="Output on compare" v="Clear">
+              <Output_on_overrun v="Set" />
+              <Initial_state v="High" />
               <Output_pin v="ADC0_SE9/TSI0_CH6/PTB1/I2C0_SDA/FTM1_CH1/FTM1_QD_PHB" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -876,9 +876,9 @@ Autoselect
           <enumgroup name="Mode" v="Compare">
             <Compare v="FTM1_C0V" />
             <Offset v="0 ms" />
-            <enumgroup name="Output on compare" v="Set">
-              <Output_on_overrun v="Clear" />
-              <Initial_state v="Low" />
+            <enumgroup name="Output on compare" v="Clear">
+              <Output_on_overrun v="Set" />
+              <Initial_state v="High" />
               <Output_pin v="ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/FTM1_QD_PHA" />
             </enumgroup>
             <boolgroup name="Interrupt" v="Disabled" />
@@ -948,7 +948,7 @@ Autoselect
       <boolgroup name="Interrupt service/event" v="Disabled" />
       <Period v="20 ms" />
       <Starting_pulse_width v="0 ms" />
-      <Initial_polarity v="low" />
+      <Initial_polarity v="high" />
       <Same_period_in_modes v="no" />
       <Component_uses_entire_timer v="no" />
       <group name="Initialization">
@@ -972,7 +972,7 @@ Autoselect
             <boolgroup name="Interrupt service/event" v="Disabled" />
             <Period v="20 ms" />
             <Starting_pulse_width v="0 ms" />
-            <Initial_polarity v="low" />
+            <Initial_polarity v="high" />
             <group name="Initialization">
               <Enabled_in_init__code v="yes" />
               <group name="Event mask">

@@ -596,7 +596,7 @@ Autoselect
       <GetValue8 v="generate code" />
       <GetChanValue8 v="generate code" />
       <GetValue16 v="generate code" />
-      <GetChanValue16 v="don&amp;apos;t generate code" />
+      <GetChanValue16 v="generate code" />
       <Calibrate v="generate code" />
       <GetCalibrationStatus v="don&amp;apos;t generate code" />
       <EnableAsynchroClock v="don&amp;apos;t generate code" />
