@@ -63,7 +63,6 @@ int main(void)
 /*lint -restore Enable MISRA rule (6.3) checking. */
 {
   /* Write your local variable definition here */
-
   /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
@@ -74,16 +73,45 @@ int main(void)
   inputWindow();
   instructions();
   userInput();
-  __asm ("wfi");
+  Term1_MoveTo(5,90);
+
+  int16 joysticks1[4], joysticks2[4];
+  	 word boomVertDS = 1000;
+  	 word string = 1500;
+  	 DisplaySetUp();
+  	 AD1_Calibrate(true);
+  	 AD1_Measure(true);
+  	 AD1_GetValue16(joysticks1);
+  	 //set boom vertical to not moving
+  	 //boomVert_SetDutyUS(boomVertDS);
+  	 //set stringThingy vertical to not moving
+  	 //stringThingy_SetDutyUS(string);
+
+
+
+  //__asm ("wfi");
 
   //something is stuffed, it will detect the new string however, it will only ever print the first thing it detects, i.e if u enter a second command this wont be detected. As if the buffer isnt being reset properly, but i think it is to my best guess
   int command;
   for(;;){
+	  AD1_Measure(true);
+	  AD1_GetValue16(joysticks2);
+	// If the values change, update the display
+	  for (int i = 0; i <= 4; i++){
+		if (joysticks1[i] != joysticks2[i])
+			UpdateDisplay(joysticks2, i);
+	  }
+	// Save the latest set of values
+	  for (int i = 0; i <= 4; i++){
+		  joysticks1[i] = joysticks2[i];
+	  }
 	  while(flag){
 		  if(sscanf(buffer, "go up %i", &command) == 1){
 			  Term1_MoveTo(67,9);
 			  Term1_SendStr("going up ");
 			  Term1_SendNum(command);
+			  string += command;
+			  stringThingy_SetDutyUS(string);
 			  Term1_MoveTo(67,6);
 			  Term1_EraseLine();
 			  userInput();

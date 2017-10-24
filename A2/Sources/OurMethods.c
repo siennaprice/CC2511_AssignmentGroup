@@ -9,20 +9,22 @@
 #include "Term1.h"
 #include "stdbool.h"
 
-//void DisplaySetUp (void) {
-//	Term1_MoveTo(1, 1);
-//	Term1_Cls();
-//	Term1_SendStr("RVert    - \r\n");
-//	Term1_SendStr("LVert   - \r\n");
-//	Term1_SendStr("LHor   - \r\n");
-//	Term1_SendStr("RHor    - \r\n");
-//}
-//
-//void UpdateDisplay (int16 *values, int index) {
-//	Term1_MoveTo(11, index);
-//	Term1_SendNum(values[index]);
-//	Term1_SendStr("   ");
-//}
+// -----------MANUAL Functions-----------------------------------------
+
+void DisplaySetUp (void) {
+	Term1_MoveTo(1, 1);
+	Term1_Cls();
+	Term1_SendStr("RVert    - \r\n");
+	Term1_SendStr("LVert   - \r\n");
+	Term1_SendStr("LHor   - \r\n");
+	Term1_SendStr("RHor    - \r\n");
+}
+
+void UpdateDisplay (int16 *values, int index) {
+	Term1_MoveTo(11, index);
+	Term1_SendNum(values[index]);
+	Term1_SendStr("   ");
+}
 
 
 
