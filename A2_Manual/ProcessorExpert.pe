@@ -3,7 +3,7 @@
   <Header>
     <Name>crane</Name>
     <SavedBy>jc240979</SavedBy>
-    <ModificationStamp>24</ModificationStamp>
+    <ModificationStamp>26</ModificationStamp>
     <Date>2017-10-16</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.0.RT7_b1515-0427</PEversion>
@@ -25744,7 +25744,7 @@
         <ItemSymbol>_MainTmg</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>1 ms</Value>
+        <Value>50 ms</Value>
         <RuntimeSetting>0</RuntimeSetting>
         <ReqDevPrescHigh>-1</ReqDevPrescHigh>
         <ReqDevPrescLow>-1</ReqDevPrescLow>
@@ -25770,7 +25770,7 @@
         <ReqSrcClkPrescSpeedMode5>-1</ReqSrcClkPrescSpeedMode5>
         <ReqSrcClkPrescSpeedMode6>-1</ReqSrcClkPrescSpeedMode6>
         <ReqSrcClkPrescSpeedMode7>-1</ReqSrcClkPrescSpeedMode7>
-        <InitValue>1 ms</InitValue>
+        <InitValue>50 ms</InitValue>
         <Precision>5.0</Precision>
         <PrecInProc>true</PrecInProc>
         <LowLimit />
@@ -26095,7 +26095,7 @@
               <ReqSrcClkPrescSpeedMode5>-1</ReqSrcClkPrescSpeedMode5>
               <ReqSrcClkPrescSpeedMode6>-1</ReqSrcClkPrescSpeedMode6>
               <ReqSrcClkPrescSpeedMode7>-1</ReqSrcClkPrescSpeedMode7>
-              <InitValue>1 ms</InitValue>
+              <InitValue>50 ms</InitValue>
               <Precision>5.0</Precision>
               <PrecInProc>true</PrecInProc>
               <LowLimit />
@@ -27165,7 +27165,7 @@
         <ReqSrcClkPrescSpeedMode5>-1</ReqSrcClkPrescSpeedMode5>
         <ReqSrcClkPrescSpeedMode6>-1</ReqSrcClkPrescSpeedMode6>
         <ReqSrcClkPrescSpeedMode7>-1</ReqSrcClkPrescSpeedMode7>
-        <InitValue>1 ms</InitValue>
+        <InitValue>50 ms</InitValue>
         <Precision>5.0</Precision>
         <PrecInProc>true</PrecInProc>
         <LowLimit />

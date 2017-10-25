@@ -7,7 +7,7 @@
 **     Version     : Component 01.014, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-25, 13:27, # CodeGen: 19
+**     Date/Time   : 2017-10-25, 20:39, # CodeGen: 22
 **     Abstract    :
 **          This component implements a pulse-width modulation generator
 **          that generates signal with variable duty and fixed cycle.
@@ -22,7 +22,7 @@
 **          Output pin signal                              : 
 **          Counter                                        : FTM0_CNT
 **          Interrupt service/event                        : Disabled
-**          Period                                         : 1 ms
+**          Period                                         : 50 ms
 **          Starting pulse width                           : 0 ms
 **          Initial polarity                               : high
 **          Initialization                                 : 
@@ -328,10 +328,10 @@ LDD_TError PwmLdd3_SetDutyUS(LDD_TDeviceData *DeviceDataPtr, uint16_t Time)
 
   /* Time test - this test can be disabled by setting the "Ignore range checking"
      property to the "yes" value in the "Configuration inspector" */
-  if (Time > 0x03E8U) {                /* Is the given value out of range? */
+  if (Time > 0xC350U) {                /* Is the given value out of range? */
     return ERR_PARAM_RANGE;            /* If yes then error */
   }
-  rtval = Time * 65.534500034331F;     /* Multiply given value and actual clock configuration coefficient */
+  rtval = Time * 1.31072F;             /* Multiply given value and actual clock configuration coefficient */
   if (rtval > 0xFFFFUL) {              /* Is the result greater than 65535 ? */
     DeviceDataPrv->RatioStore = 0xFFFFU; /* If yes then use maximal possible value */
   }
@@ -374,10 +374,10 @@ LDD_TError PwmLdd3_SetDutyMS(LDD_TDeviceData *DeviceDataPtr, uint16_t Time)
 
   /* Time test - this test can be disabled by setting the "Ignore range checking"
      property to the "yes" value in the "Configuration inspector" */
-  if (Time > 0x01U) {                  /* Is the given value out of range? */
+  if (Time > 0x32U) {                  /* Is the given value out of range? */
     return ERR_PARAM_RANGE;            /* If yes then error */
   }
-  rtval = Time * 65534.500046362926F;  /* Multiply given value and actual clock configuration coefficient */
+  rtval = Time * 1310.72F;             /* Multiply given value and actual clock configuration coefficient */
   if (rtval > 0xFFFFUL) {              /* Is the result greater than 65535 ? */
     DeviceDataPrv->RatioStore = 0xFFFFU; /* If yes then use maximal possible value */
   }

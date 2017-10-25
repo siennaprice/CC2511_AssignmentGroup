@@ -7,7 +7,7 @@
 **     Version     : Component 01.164, Driver 01.11, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-25, 13:27, # CodeGen: 19
+**     Date/Time   : 2017-10-25, 20:39, # CodeGen: 22
 **     Abstract    :
 **          This TimerUnit component provides a low level API for unified hardware access across
 **          various timer devices using the Prescaler-Counter-Compare-Capture timer structure.
@@ -22,7 +22,7 @@
 **            Counter frequency                            : Auto select
 **          Counter restart                                : On-match
 **            Period device                                : FTM0_MOD
-**            Period                                       : 1 ms
+**            Period                                       : 50 ms
 **            Interrupt                                    : Disabled
 **          Channel list                                   : 1
 **            Channel 0                                    : 
@@ -211,8 +211,8 @@ LDD_TDeviceData* TU2_Init(LDD_TUserData *UserDataPtr)
   FTM0_C6SC = 0x00U;                   /* Clear channel status and control register */
   /* FTM0_C7SC: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,CHF=0,CHIE=0,MSB=0,MSA=0,ELSB=0,ELSA=0,??=0,DMA=0 */
   FTM0_C7SC = 0x00U;                   /* Clear channel status and control register */
-  /* FTM0_MOD: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,MOD=0x51EB */
-  FTM0_MOD = FTM_MOD_MOD(0x51EB);      /* Set up modulo register */
+  /* FTM0_MOD: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,MOD=0xFFFF */
+  FTM0_MOD = FTM_MOD_MOD(0xFFFF);      /* Set up modulo register */
   /* FTM0_C1SC: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,CHF=0,CHIE=0,MSB=1,MSA=0,ELSB=1,ELSA=0,??=0,DMA=0 */
   FTM0_C1SC = (FTM_CnSC_MSB_MASK | FTM_CnSC_ELSB_MASK); /* Set up channel status and control register */
   /* FTM0_C1V: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,VAL=0 */
@@ -229,8 +229,8 @@ LDD_TDeviceData* TU2_Init(LDD_TUserData *UserDataPtr)
                 PORT_PCR_MUX(0x04)
                ));
   DeviceDataPrv->Source = FTM_PDD_SYSTEM; /* Store clock source */
-  /* FTM0_SC: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,TOF=0,TOIE=0,CPWMS=0,CLKS=1,PS=0 */
-  FTM0_SC = (FTM_SC_CLKS(0x01) | FTM_SC_PS(0x00)); /* Set up status and control register */
+  /* FTM0_SC: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,TOF=0,TOIE=0,CPWMS=0,CLKS=1,PS=4 */
+  FTM0_SC = (FTM_SC_CLKS(0x01) | FTM_SC_PS(0x04)); /* Set up status and control register */
   /* Registration of the device structure */
   PE_LDD_RegisterDeviceStructure(PE_LDD_COMPONENT_TU2_ID,DeviceDataPrv);
   return ((LDD_TDeviceData *)DeviceDataPrv); /* Return pointer to the device data structure */

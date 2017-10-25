@@ -71,74 +71,64 @@ int main(void)
 
   /* Write your code here */
   //-----------------------------------------------------------------------------------------------------
-  int16 joysticks1[4], joysticks2[4];
-  word boomVertDS = 1000;
-  word string = 1500;
+  int16 joysticks1[6], joysticks2[6]; // Includes hall sensors
+//  word boomVertDS = 1500;
   DisplaySetUp();
   AD1_Calibrate(true);
   AD1_Measure(true);
   AD1_GetValue16(joysticks1);
-  //set boom vertical to not moving
-  boomVert_SetDutyUS(boomVertDS);
-  //set stringThingy vertical to not moving
-  // stringThingy_SetDutyUS(magnet);
- Motor_SetRatio8(120);
-for(;;) {
+
+ for(;;) {
 	  AD1_Measure(true);
 	  AD1_GetValue16(joysticks2);
 
 	  // If the values change, update the display
-	  for (int i = 0; i <= 4; i++){
+	  for (int i = 0; i < 4; i++){
 		if (joysticks1[i] != joysticks2[i])
 			UpdateDisplay(joysticks2, i);
 	  }
 
 	  // Save the latest set of values
-	  for (int i = 0; i <= 4; i++){
+	  for (int i = 0; i < 4; i++){
 		  joysticks1[i] = joysticks2[i];
 	  }
 
-	  // if right vertical is detected; boom up/down
-	  // note: condense this later
-//	  if (joysticks1[1] > 40 && joystick1[1] < 100) { // up
-//		  boomVert_SetDutyUS(2000);
+//	  // if right vertical is detected; boom up/down :NEED ANOTHER CRANE TO TEST THIS
+//	  if (joysticks1[1] > 0) { // up
+//		  boomVertDS++
+//		  boomVert_SetDutyUS(boomVertDS);
 //	  }
-//	  else if (joysticks1[1] < -30) { // down
-//		  boomVert_SetDutyUS(1000);
-//	  }
-//	  else{
-//	  	boomVert_SetDutyUS(1500);
+//	  else if (joysticks1[1] < 0 && joysticks1[1] > -1000 ) { // down
+//		  boomVertDS--
+//		  boomVert_SetDutyUS(boomVertDS);
 //	  }
 
-	//   If left vertical is detected; magnet up/down
-//	  if (joysticks1[2] > 0 && joysticks1[2] < 100) {
-//		  stringThingy_SetDutyUS(1000); // down
-//	  } else if (joysticks1[2] < 0) {
-//		  stringThingy_SetDutyUS(2000); // up
-//	  } else {
-//		  stringThingy_SetDutyUS(1600); // not moving
-//	  }
-//
-//	  if(joysticks1[3] > 0 && joysticks1[3] < 100){
-//		  direction_PutVal(1);
-//		  Motor_Enable();
-//	  }
-//	  else if(joysticks1[3] < 0){
-//		  direction_PutVal(0);
-//		  Motor_Enable();
-//	  }
-//	  else{
-//		  Motor_Disable();
-//	  }
+      // If left vertical is detected; magnet up/down  :THIS WORKS NOW
+	  if (joysticks1[2] < 0) {
+		  stringThingy_SetDutyUS(2000); // down
+	  } else if (joysticks1[2] > 0 && joysticks1[2] < 1000) {
+		  stringThingy_SetDutyUS(1000); // up
+	  } else {
+		  stringThingy_SetDutyUS(1600); // stop
+	  }
 
-	  Motor_Enable();
-	  //turns magnet on and off (have to hold switch to keep magnet on)
-//	  if(leftSwitch_GetVal() == 1){
-//		  //this is being reached, but it is not sending putVal to the magnet.
-//		  magnet_PutVal(1);
-//	  }
-//	  else if(leftSwitch_GetVal() == 0){
-//		 magnet_PutVal(0);
+	// DC Motor :NOT WORKING
+	  if (joysticks2[3] > 0) {
+		  direction_SetVal(); // Left
+		  Motor_SetRatio8(120);
+	  } else if (joysticks2[3] < 0 && joysticks2[3] > -1000) {
+		  direction_ClrVal(); // Right
+		  Motor_SetRatio8(120);
+	  } else {
+		  Motor_SetRatio8(0);
+	  }
+
+//	  // Magnet on/off :NOT WORKING
+//	  if (leftSwitch_GetVal() == 1) {
+//		  magnet_NegVal();
+//	  	  while (leftSwitch_GetVal() == 1){
+//		  // Wait for button release
+//	  	  }
 //	  }
 
 }
