@@ -7,7 +7,7 @@
 **     Version     : Component 01.697, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-23, 11:57, # CodeGen: 15
+**     Date/Time   : 2017-10-25, 11:31, # CodeGen: 17
 **     Abstract    :
 **         This device "ADC" implements an A/D converter,
 **         its control methods and interrupt/event handling procedure.
@@ -19,7 +19,7 @@
 **          Interrupt service/event                        : Enabled
 **            A/D interrupt                                : INT_ADC0
 **            A/D interrupt priority                       : medium priority
-**          A/D channels                                   : 4
+**          A/D channels                                   : 6
 **            Channel0                                     : 
 **              A/D channel (pin)                          : ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/EWM_OUT_b
 **              A/D channel (pin) signal                   : RHorizontal
@@ -35,6 +35,14 @@
 **            Channel3                                     : 
 **              A/D channel (pin)                          : ADC0_SE14/TSI0_CH13/PTC0/SPI0_PCS4/PDB0_EXTRG
 **              A/D channel (pin) signal                   : LHorizontal
+**              Mode select                                : Single Ended
+**            Channel4                                     : 
+**              A/D channel (pin)                          : ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/UART0_RTS_b/FTM0_FLT3
+**              A/D channel (pin) signal                   : HallA
+**              Mode select                                : Single Ended
+**            Channel5                                     : 
+**              A/D channel (pin)                          : ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/FTM0_FLT0
+**              A/D channel (pin) signal                   : HallB
 **              Mode select                                : Single Ended
 **          A/D resolution                                 : Autoselect
 **          Conversion time                                : 4.768372 µs
@@ -143,6 +151,8 @@ static void ClrSumV(void)
   AD1_OutV[1] = 0U;                    /* Set variable for storing measured values to 0 */
   AD1_OutV[2] = 0U;                    /* Set variable for storing measured values to 0 */
   AD1_OutV[3] = 0U;                    /* Set variable for storing measured values to 0 */
+  AD1_OutV[4] = 0U;                    /* Set variable for storing measured values to 0 */
+  AD1_OutV[5] = 0U;                    /* Set variable for storing measured values to 0 */
 }
 
 /*
@@ -251,6 +261,8 @@ byte AD1_GetValue8(byte *Values)
   Values[1] = (byte)((byte)(AD1_OutV[1] >> 8U)); /* Save measured values to the output buffer */
   Values[2] = (byte)((byte)(AD1_OutV[2] >> 8U)); /* Save measured values to the output buffer */
   Values[3] = (byte)((byte)(AD1_OutV[3] >> 8U)); /* Save measured values to the output buffer */
+  Values[4] = (byte)((byte)(AD1_OutV[4] >> 8U)); /* Save measured values to the output buffer */
+  Values[5] = (byte)((byte)(AD1_OutV[5] >> 8U)); /* Save measured values to the output buffer */
   return ERR_OK;                       /* OK */
 }
 
@@ -290,7 +302,7 @@ byte AD1_GetValue8(byte *Values)
 /* ===================================================================*/
 byte AD1_GetChanValue8(byte Channel, byte *Value)
 {
-  if (Channel >= 4U) {                 /* Is channel number greater than or equal to 4 */
+  if (Channel >= 6U) {                 /* Is channel number greater than or equal to 6 */
     return ERR_RANGE;                  /* If yes then error */
   }
   if (!OutFlg) {                       /* Is output flag set? */
@@ -337,6 +349,8 @@ byte AD1_GetValue16(word *Values)
   Values[1] = AD1_OutV[1];             /* Save measured values to the output buffer */
   Values[2] = AD1_OutV[2];             /* Save measured values to the output buffer */
   Values[3] = AD1_OutV[3];             /* Save measured values to the output buffer */
+  Values[4] = AD1_OutV[4];             /* Save measured values to the output buffer */
+  Values[5] = AD1_OutV[5];             /* Save measured values to the output buffer */
   return ERR_OK;                       /* OK */
 }
 
@@ -376,7 +390,7 @@ byte AD1_GetValue16(word *Values)
 /* ===================================================================*/
 byte AD1_GetChanValue16(byte Channel, word *Value)
 {
-  if (Channel >= 4U) {                 /* Is channel number greater than or equal to 4 */
+  if (Channel >= 6U) {                 /* Is channel number greater than or equal to 6 */
     return ERR_RANGE;                  /* If yes then error */
   }
   if (!OutFlg) {                       /* Is output flag set? */
@@ -452,7 +466,7 @@ void AdcLdd1_OnMeasurementComplete(LDD_TUserData *UserDataPtr)
   }
   AdcLdd1_GetMeasuredValues(AdcLdd1_DeviceDataPtr, (LDD_TData *)&AD1_OutV[SumChan]);
   SumChan++;                           /* Increase counter of measured channels*/
-  if (SumChan == 4U) {                 /* Is number of measured channels equal to the number of channels used in the component? */
+  if (SumChan == 6U) {                 /* Is number of measured channels equal to the number of channels used in the component? */
     SumChan = 0U;                      /* If yes then set the counter of measured channels to 0 */
     OutFlg = TRUE;                     /* Measured values are available */
     AD1_OnEnd();                       /* If yes then invoke user event */

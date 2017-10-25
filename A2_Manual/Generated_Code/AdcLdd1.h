@@ -7,7 +7,7 @@
 **     Version     : Component 01.183, Driver 01.08, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-23, 11:57, # CodeGen: 15
+**     Date/Time   : 2017-10-25, 11:31, # CodeGen: 17
 **     Abstract    :
 **         This device "ADC_LDD" implements an A/D converter,
 **         its control methods and interrupt/event handling procedure.
@@ -19,7 +19,7 @@
 **            A/D interrupt                                : INT_ADC0
 **            A/D interrupt priority                       : medium priority
 **          DMA                                            : Disabled
-**          A/D channel list                               : 4
+**          A/D channel list                               : 6
 **            Channel 0                                    : 
 **              Channel mode                               : Single Ended
 **                Input                                    : 
@@ -40,6 +40,16 @@
 **                Input                                    : 
 **                  A/D channel (pin)                      : ADC0_SE14/TSI0_CH13/PTC0/SPI0_PCS4/PDB0_EXTRG
 **                  A/D channel (pin) signal               : LHorizontal
+**            Channel 4                                    : 
+**              Channel mode                               : Single Ended
+**                Input                                    : 
+**                  A/D channel (pin)                      : ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/UART0_RTS_b/FTM0_FLT3
+**                  A/D channel (pin) signal               : HallA
+**            Channel 5                                    : 
+**              Channel mode                               : Single Ended
+**                Input                                    : 
+**                  A/D channel (pin)                      : ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/FTM0_FLT0
+**                  A/D channel (pin) signal               : HallB
 **          Static sample groups                           : Disabled
 **          Max. samples                                   : 8
 **          A/D resolution                                 : Autoselect
@@ -187,10 +197,12 @@ extern "C" {
 #define AdcLdd1_RVertical               1U
 #define AdcLdd1_LVertical               2U
 #define AdcLdd1_LHorizontal             3U
+#define AdcLdd1_HallA                   4U
+#define AdcLdd1_HallB                   5U
 
 /* This constant contains the number of channels in the "A/D channel list"
    group */
-#define AdcLdd1_CHANNEL_COUNT           4u
+#define AdcLdd1_CHANNEL_COUNT           6u
 
 /* This constant can be used in the sample array to create a gap in sample group.
    It is intended to disable a measurement of a sample */

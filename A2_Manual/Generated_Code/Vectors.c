@@ -6,7 +6,7 @@
 **     Version     : Component 01.009, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-23, 11:57, # CodeGen: 15
+**     Date/Time   : 2017-10-25, 11:46, # CodeGen: 18
 **     Abstract    :
 **
 **     Settings    :
@@ -67,10 +67,15 @@
   #include "boomVert.h"
   #include "PwmLdd1.h"
   #include "TU1.h"
-  #include "stringThingy.h"
-  #include "PwmLdd2.h"
   #include "magnet.h"
   #include "BitIoLdd3.h"
+  #include "stringThingy.h"
+  #include "PwmLdd2.h"
+  #include "Motor.h"
+  #include "PwmLdd3.h"
+  #include "TU2.h"
+  #include "direction.h"
+  #include "BitIoLdd4.h"
   #include "Events.h"
 
 

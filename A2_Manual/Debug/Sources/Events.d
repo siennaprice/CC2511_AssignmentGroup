@@ -36,6 +36,14 @@ Sources/Events.o: ../Sources/Events.c \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/stringThingy.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Motor.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd3.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU2.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd3.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU2.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/direction.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd4.h \
+ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd4.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/magnet.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd3.h
@@ -113,6 +121,22 @@ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/string
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h:
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd2.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/Motor.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd3.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU2.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/PwmLdd3.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/TU2.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/direction.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd4.h:
+
+C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/BitIoLdd4.h:
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Generated_Code/magnet.h:
 

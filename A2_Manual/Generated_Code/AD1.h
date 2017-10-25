@@ -7,7 +7,7 @@
 **     Version     : Component 01.697, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-23, 11:57, # CodeGen: 15
+**     Date/Time   : 2017-10-25, 11:31, # CodeGen: 17
 **     Abstract    :
 **         This device "ADC" implements an A/D converter,
 **         its control methods and interrupt/event handling procedure.
@@ -19,7 +19,7 @@
 **          Interrupt service/event                        : Enabled
 **            A/D interrupt                                : INT_ADC0
 **            A/D interrupt priority                       : medium priority
-**          A/D channels                                   : 4
+**          A/D channels                                   : 6
 **            Channel0                                     : 
 **              A/D channel (pin)                          : ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/EWM_OUT_b
 **              A/D channel (pin) signal                   : RHorizontal
@@ -35,6 +35,14 @@
 **            Channel3                                     : 
 **              A/D channel (pin)                          : ADC0_SE14/TSI0_CH13/PTC0/SPI0_PCS4/PDB0_EXTRG
 **              A/D channel (pin) signal                   : LHorizontal
+**              Mode select                                : Single Ended
+**            Channel4                                     : 
+**              A/D channel (pin)                          : ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/UART0_RTS_b/FTM0_FLT3
+**              A/D channel (pin) signal                   : HallA
+**              Mode select                                : Single Ended
+**            Channel5                                     : 
+**              A/D channel (pin)                          : ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/FTM0_FLT0
+**              A/D channel (pin) signal                   : HallB
 **              Mode select                                : Single Ended
 **          A/D resolution                                 : Autoselect
 **          Conversion time                                : 4.768372 µs
@@ -127,7 +135,7 @@ extern "C" {
 
 
 
-#define AD1_SAMPLE_GROUP_SIZE 4U
+#define AD1_SAMPLE_GROUP_SIZE 6U
 void AD1_HWEnDi(void);
 /*
 ** ===================================================================

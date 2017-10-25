@@ -14,8 +14,11 @@ Generated_Code/PE_LDD.o: ../Generated_Code/PE_LDD.c \
  ../Generated_Code/boomVert.h ../Generated_Code/PwmLdd1.h \
  ../Generated_Code/TU1.h \
  C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/FTM_PDD.h \
+ ../Generated_Code/magnet.h ../Generated_Code/BitIoLdd3.h \
  ../Generated_Code/stringThingy.h ../Generated_Code/PwmLdd2.h \
- ../Generated_Code/magnet.h ../Generated_Code/BitIoLdd3.h
+ ../Generated_Code/Motor.h ../Generated_Code/PwmLdd3.h \
+ ../Generated_Code/TU2.h ../Generated_Code/direction.h \
+ ../Generated_Code/BitIoLdd4.h
 
 ../Generated_Code/PE_LDD.h:
 
@@ -63,10 +66,20 @@ C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/GPIO_
 
 C:/Users/jc428352/Desktop/CC2511_AssignmentGroup/A2_Manual/Static_Code/PDD/FTM_PDD.h:
 
+../Generated_Code/magnet.h:
+
+../Generated_Code/BitIoLdd3.h:
+
 ../Generated_Code/stringThingy.h:
 
 ../Generated_Code/PwmLdd2.h:
 
-../Generated_Code/magnet.h:
+../Generated_Code/Motor.h:
 
-../Generated_Code/BitIoLdd3.h:
+../Generated_Code/PwmLdd3.h:
+
+../Generated_Code/TU2.h:
+
+../Generated_Code/direction.h:
+
+../Generated_Code/BitIoLdd4.h:

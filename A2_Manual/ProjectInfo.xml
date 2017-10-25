@@ -58,15 +58,20 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd2.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd4.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Inhr1.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Motor.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_LDD.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd2.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd3.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\TU1.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\TU2.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Term1.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Vectors.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\boomVert.c</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\direction.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\leftSwitch.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\magnet.c</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\rightSwitch.c</PathName>
@@ -83,18 +88,23 @@
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd1.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd2.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\BitIoLdd4.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Inhr1.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Motor.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_Const.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PE_Types.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd1.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd2.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\PwmLdd3.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\TU1.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\TU2.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\Term1.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\boomVert.h</PathName>
+      <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\direction.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\leftSwitch.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\magnet.h</PathName>
       <PathName>C:\Users\jc428352\Desktop\CC2511_AssignmentGroup\A2_Manual\Generated_Code\rightSwitch.h</PathName>

@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P64M50SF0RM Rev. 1, Oct 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-10-23, 11:57, # CodeGen: 15
+**     Date/Time   : 2017-10-25, 11:46, # CodeGen: 18
 **     Abstract    :
 **
 **     Settings    :
@@ -76,9 +76,7 @@
 **                TDI                                      : Enabled
 **                  TDI Pin                                : TSI0_CH2/PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI
 **                  TDI Pin signal                         : 
-**                TDO                                      : Enabled
-**                  TDO Pin                                : TSI0_CH3/PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO
-**                  TDO Pin signal                         : 
+**                TDO                                      : Disabled
 **                TCK                                      : Enabled
 **                  TCK Pin                                : TSI0_CH1/PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK
 **                  TCK Pin signal                         : 
@@ -308,10 +306,15 @@
 #include "boomVert.h"
 #include "PwmLdd1.h"
 #include "TU1.h"
-#include "stringThingy.h"
-#include "PwmLdd2.h"
 #include "magnet.h"
 #include "BitIoLdd3.h"
+#include "stringThingy.h"
+#include "PwmLdd2.h"
+#include "Motor.h"
+#include "PwmLdd3.h"
+#include "TU2.h"
+#include "direction.h"
+#include "BitIoLdd4.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -532,10 +535,14 @@ void PE_low_level_init(void)
   (void)BitIoLdd2_Init(NULL);
   /* ### PWM_LDD "PwmLdd1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)PwmLdd1_Init(NULL);
-  /* ### PWM_LDD "PwmLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
-  (void)PwmLdd2_Init(NULL);
   /* ### BitIO_LDD "BitIoLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)BitIoLdd3_Init(NULL);
+  /* ### PWM_LDD "PwmLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)PwmLdd2_Init(NULL);
+  /* ### PWM_LDD "PwmLdd3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)PwmLdd3_Init(NULL);
+  /* ### BitIO_LDD "BitIoLdd4" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)BitIoLdd4_Init(NULL);
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

@@ -44,6 +44,11 @@
 #include "TU1.h"
 #include "stringThingy.h"
 #include "PwmLdd2.h"
+#include "Motor.h"
+#include "PwmLdd3.h"
+#include "TU2.h"
+#include "direction.h"
+#include "BitIoLdd4.h"
 #include "magnet.h"
 #include "BitIoLdd3.h"
 /* Including shared modules, which are used for whole project */
@@ -76,8 +81,8 @@ int main(void)
   //set boom vertical to not moving
   boomVert_SetDutyUS(boomVertDS);
   //set stringThingy vertical to not moving
-  //stringThingy_SetDutyUS(magnet);
-
+  // stringThingy_SetDutyUS(magnet);
+ Motor_SetRatio8(120);
 for(;;) {
 	  AD1_Measure(true);
 	  AD1_GetValue16(joysticks2);
@@ -90,7 +95,7 @@ for(;;) {
 
 	  // Save the latest set of values
 	  for (int i = 0; i <= 4; i++){
-	  joysticks1[i] = joysticks2[i];
+		  joysticks1[i] = joysticks2[i];
 	  }
 
 	  // if right vertical is detected; boom up/down
@@ -105,25 +110,36 @@ for(;;) {
 //	  	boomVert_SetDutyUS(1500);
 //	  }
 
-	   //If left vertical is detected; magnet up/down
-	  if (joysticks1[2] > 40 && joysticks1[2] < 100) {
-		  stringThingy_SetDutyUS(1000); // down
-	  } else if (joysticks1[2] < -30) {
-		  stringThingy_SetDutyUS(2000); // up
-	  } else {
-		  stringThingy_SetDutyUS(1600); // not moving
-	  }
+	//   If left vertical is detected; magnet up/down
+//	  if (joysticks1[2] > 0 && joysticks1[2] < 100) {
+//		  stringThingy_SetDutyUS(1000); // down
+//	  } else if (joysticks1[2] < 0) {
+//		  stringThingy_SetDutyUS(2000); // up
+//	  } else {
+//		  stringThingy_SetDutyUS(1600); // not moving
+//	  }
+//
+//	  if(joysticks1[3] > 0 && joysticks1[3] < 100){
+//		  direction_PutVal(1);
+//		  Motor_Enable();
+//	  }
+//	  else if(joysticks1[3] < 0){
+//		  direction_PutVal(0);
+//		  Motor_Enable();
+//	  }
+//	  else{
+//		  Motor_Disable();
+//	  }
 
+	  Motor_Enable();
 	  //turns magnet on and off (have to hold switch to keep magnet on)
-	  if(leftSwitch_GetVal() == 1){
-		  //this is being reached, but it is not sending putVal to the magnet.
-		  magnet_PutVal(1);
-		  Term1_SendStr("Magnet on");
-	  }
-	  if(leftSwitch_GetVal() == 0){
-		 // magnet_PutVal(magnet);
-		  Term1_SendStr("Magnet off");
-	  }
+//	  if(leftSwitch_GetVal() == 1){
+//		  //this is being reached, but it is not sending putVal to the magnet.
+//		  magnet_PutVal(1);
+//	  }
+//	  else if(leftSwitch_GetVal() == 0){
+//		 magnet_PutVal(0);
+//	  }
 
 }
 

@@ -33,8 +33,11 @@
 - \subpage BitIoLdd2
 - \subpage TU1
 - \subpage PwmLdd1
-- \subpage PwmLdd2
 - \subpage BitIoLdd3
+- \subpage PwmLdd2
+- \subpage TU2
+- \subpage PwmLdd3
+- \subpage BitIoLdd4
 
 */
 

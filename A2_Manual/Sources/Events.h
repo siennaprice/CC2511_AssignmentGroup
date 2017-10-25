@@ -47,6 +47,11 @@
 #include "TU1.h"
 #include "stringThingy.h"
 #include "PwmLdd2.h"
+#include "Motor.h"
+#include "PwmLdd3.h"
+#include "TU2.h"
+#include "direction.h"
+#include "BitIoLdd4.h"
 #include "magnet.h"
 #include "BitIoLdd3.h"
 
